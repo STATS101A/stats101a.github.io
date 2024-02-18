@@ -1,1 +1,1 @@
-# STATS101A.github.io
+# stats101a.github.io
