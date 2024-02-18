@@ -11,7 +11,7 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "This site was produced with WebR and Quarto in RStudio and is currently hosted by GitHub. It was created for the students of Statistics & Data Science 101A.\nLecture 1: Let’s start with a quick R Refresher https://stat101a.github.io/RRefresher.html\nLecture 2: And professional story telling with data https://stat101a.github.io/StoryTelling.html"
+    "text": "This site was produced with WebR and Quarto in RStudio and is currently hosted by GitHub. It was created for the students of Statistics & Data Science 101A.\nLecture 1: Let’s start with a quick R Refresher https://stats101a.github.io/RRefresher.html\nLecture 2: And professional story telling with data https://stats101a.github.io/StoryTelling.html"
   },
   {
     "objectID": "StoryTelling.html",
