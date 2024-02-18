@@ -11,7 +11,7 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "This site was produced with WebR and Quarto in RStudio and is currently hosted by GitHub. It was created for the students of Statistics & Data Science 101A.\nLecture 1: Let’s start with a quick R Refresher https://stats101a.github.io/RRefresher.html\nLecture 2: And professional story telling with data https://stats101a.github.io/StoryTelling.html"
+    "text": "Lecture 1: Let’s start with a quick R Refresher https://stats101a.github.io/RRefresher.html\nLecture 2: And professional story telling with data https://stats101a.github.io/StoryTelling.html"
   },
   {
     "objectID": "StoryTelling.html",
@@ -142,9 +142,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Stat101a",
+    "title": "Statistics 101A - Introduction to Data Analysis and Regression",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "This site was produced with WebR and Quarto in RStudio and is currently hosted by GitHub. It was created for the students of Statistics & Data Science 101A.\nTo learn more about Quarto websites please visit https://quarto.org/docs/websites.\nTo learn more about WebR please visit https://quarto-webr.thecoatlessprofessor.com/qwebr-first-steps.html.\nAnd this site is hosted by GitHub (free) and easy setup and maintenance https://pages.github.com/"
   },
   {
     "objectID": "RRefresher_answers.html",
