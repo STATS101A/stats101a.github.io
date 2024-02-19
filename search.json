@@ -32,7 +32,7 @@
     "href": "RRefresher.html",
     "title": "R Refresher",
     "section": "",
-    "text": "This is an R Refresher adapted from Weisberg (2014) We will use packages ggplot2, knitr, dplyr and tidyr\n{webr-r, message = FALSE} webr::install(\"ggplot2\") webr::install(\"knitr\") webr::install(\"dplyr\") webr::install(\"tidyr\") library(ggplot2) library(knitr) library(dplyr) library(tidyr)"
+    "text": "This is an R Refresher adapted from Weisberg (2014) We will use packages ggplot2, knitr, dplyr and tidyr"
   },
   {
     "objectID": "RRefresher.html#dim",
