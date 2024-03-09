@@ -30,12 +30,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
@@ -219,7 +217,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"id":1,"code":"library(ggplot2)","options":{"label":"load-packages","results":"markup","echo":"false","autorun":"false","fig-width":7,"dpi":72,"output":"true","warning":"true","comment":"","message":"true","context":"interactive","out-height":"","fig-cap":"","out-width":"700px","classes":"","fig-height":5}},{"id":2,"code":"names(mpg)","options":{"label":"unnamed-chunk-2","results":"markup","autorun":"false","fig-width":7,"dpi":72,"output":"true","warning":"true","comment":"","message":"true","context":"interactive","out-height":"","fig-cap":"","out-width":"700px","classes":"","fig-height":5}},{"id":3,"code":"\nmean_cty <- round(mean(mpg$cty), 2)\nmean_hwy <- round(mean(mpg$hwy), 2)","options":{"label":"unnamed-chunk-3","results":"markup","echo":"false","autorun":"false","fig-width":7,"dpi":72,"output":"true","warning":"true","comment":"","message":"true","context":"interactive","out-height":"","fig-cap":"","out-width":"700px","classes":"","fig-height":5}},{"id":4,"code":"#|   - \"Color by number of cylinders\"\n#|   - \"Color by engine displacement, in liters\"\n\nggplot(mpg, aes(x = hwy, y = cty, color = cyl)) +\n  geom_point(alpha = 0.5, size = 2) +\n  scale_color_viridis_c() +\n  theme_minimal()","options":{"warning":"true","context":"interactive","fig-cap":"City and highway mileage for 38 popular models of cars.","out-width":"700px","comment":"","label":"fig-mpg","results":"markup","autorun":"false","fig-width":7,"dpi":72,"cache":"true","column":"page","layout-ncol":"2","fig-height":5,"out-height":"","classes":"","message":"true","fig-subcap":"","output":"true"}},{"id":5,"code":"ggplot(mpg, aes(x = hwy, y = cty, color = displ)) +\n  geom_point(alpha = 0.5, size = 2) +\n  scale_color_viridis_c(option = \"E\") +\n  theme_minimal()","options":{"label":"unnamed-chunk-5","results":"markup","autorun":"false","fig-width":7,"dpi":72,"output":"true","warning":"true","comment":"","message":"true","context":"interactive","out-height":"","fig-cap":"","out-width":"700px","classes":"","fig-height":5}},{"id":6,"code":"  \nmodel1 <- lm(mpg$cty ~ mpg$hwy) \nsummary(model1)\n\n# you can try alternative models too!\n  ","options":{"label":"unnamed-chunk-6","results":"markup","autorun":"false","fig-width":7,"dpi":72,"output":"true","warning":"true","comment":"","message":"true","context":"interactive","out-height":"","fig-cap":"","out-width":"700px","classes":"","fig-height":5}},{"id":7,"code":"names(model1)","options":{"label":"unnamed-chunk-7","results":"markup","autorun":"false","fig-width":7,"dpi":72,"output":"true","warning":"true","comment":"","message":"true","context":"interactive","out-height":"","fig-cap":"","out-width":"700px","classes":"","fig-height":5}},{"id":8,"code":"par(mfrow=c(2,2)) \nplot(model1)\n","options":{"label":"unnamed-chunk-8","results":"markup","autorun":"false","fig-width":7,"dpi":72,"output":"true","warning":"true","comment":"","message":"true","context":"interactive","out-height":"","fig-cap":"","out-width":"700px","classes":"","fig-height":5}},{"id":9,"code":"df <- read.csv(\"https://raw.githubusercontent.com/esmaeilifardi/DecisionTreeClassifier---Penguins.csv-Dataset/main/penguins.csv\")\nhead(df)","options":{"label":"unnamed-chunk-9","results":"markup","autorun":"false","fig-width":7,"dpi":72,"output":"true","warning":"true","comment":"","message":"true","context":"interactive","out-height":"","fig-cap":"","out-width":"700px","classes":"","fig-height":5}}];
+globalThis.qwebrCellDetails = [{"options":{"autorun":"false","out-width":"700px","fig-width":7,"results":"markup","echo":"false","classes":"","out-height":"","output":"true","message":"true","label":"load-packages","fig-cap":"","comment":"","fig-height":5,"warning":"true","dpi":72,"context":"interactive"},"id":1,"code":"library(ggplot2)"},{"options":{"autorun":"false","out-width":"700px","fig-width":7,"results":"markup","classes":"","out-height":"","output":"true","message":"true","label":"unnamed-chunk-2","fig-cap":"","comment":"","fig-height":5,"warning":"true","dpi":72,"context":"interactive"},"id":2,"code":"names(mpg)"},{"options":{"autorun":"false","out-width":"700px","fig-width":7,"results":"markup","echo":"false","classes":"","out-height":"","output":"true","message":"true","label":"unnamed-chunk-3","fig-cap":"","comment":"","fig-height":5,"warning":"true","dpi":72,"context":"interactive"},"id":3,"code":"\nmean_cty <- round(mean(mpg$cty), 2)\nmean_hwy <- round(mean(mpg$hwy), 2)"},{"options":{"autorun":"false","out-width":"700px","fig-width":7,"results":"markup","classes":"","out-height":"","fig-cap":"City and highway mileage for 38 popular models of cars.","warning":"true","cache":"true","fig-subcap":"","message":"true","output":"true","layout-ncol":"2","context":"interactive","dpi":72,"fig-height":5,"comment":"","label":"fig-mpg","column":"page"},"id":4,"code":"#|   - \"Color by number of cylinders\"\n#|   - \"Color by engine displacement, in liters\"\n\nggplot(mpg, aes(x = hwy, y = cty, color = cyl)) +\n  geom_point(alpha = 0.5, size = 2) +\n  scale_color_viridis_c() +\n  theme_minimal()"},{"options":{"autorun":"false","out-width":"700px","fig-width":7,"results":"markup","classes":"","out-height":"","output":"true","message":"true","label":"unnamed-chunk-5","fig-cap":"","comment":"","fig-height":5,"warning":"true","dpi":72,"context":"interactive"},"id":5,"code":"ggplot(mpg, aes(x = hwy, y = cty, color = displ)) +\n  geom_point(alpha = 0.5, size = 2) +\n  scale_color_viridis_c(option = \"E\") +\n  theme_minimal()"},{"options":{"autorun":"false","out-width":"700px","fig-width":7,"results":"markup","classes":"","out-height":"","output":"true","message":"true","label":"unnamed-chunk-6","fig-cap":"","comment":"","fig-height":5,"warning":"true","dpi":72,"context":"interactive"},"id":6,"code":"  \nmodel1 <- lm(mpg$cty ~ mpg$hwy) \nsummary(model1)\n\n# you can try alternative models too!\n  "},{"options":{"autorun":"false","out-width":"700px","fig-width":7,"results":"markup","classes":"","out-height":"","output":"true","message":"true","label":"unnamed-chunk-7","fig-cap":"","comment":"","fig-height":5,"warning":"true","dpi":72,"context":"interactive"},"id":7,"code":"names(model1)"},{"options":{"autorun":"false","out-width":"700px","fig-width":7,"results":"markup","classes":"","out-height":"","output":"true","message":"true","label":"unnamed-chunk-8","fig-cap":"","comment":"","fig-height":5,"warning":"true","dpi":72,"context":"interactive"},"id":8,"code":"par(mfrow=c(2,2)) \nplot(model1)\n"},{"options":{"autorun":"false","out-width":"700px","fig-width":7,"results":"markup","classes":"","out-height":"","output":"true","message":"true","label":"unnamed-chunk-9","fig-cap":"","comment":"","fig-height":5,"warning":"true","dpi":72,"context":"interactive"},"id":9,"code":"df <- read.csv(\"https://raw.githubusercontent.com/esmaeilifardi/DecisionTreeClassifier---Penguins.csv-Dataset/main/penguins.csv\")\nhead(df)"}];
 
 </script><script type="module">
 // Declare startupMessageQWebR globally
@@ -958,7 +956,6 @@ globalThis.qwebrExecuteCode = async function (
       <a href="./">Statistics 101A</a> 
         <div class="sidebar-tools-main">
     <a href="https://bruinlearn.ucla.edu/courses/187207" rel="" title="BruinLearn" class="quarto-navigation-tool px-1" aria-label="BruinLearn"><i class="bi bi-person-fill"></i></a>
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
     </div>
       </div>
@@ -1276,121 +1273,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
-  const disableStylesheet = (stylesheets) => {
-    for (let i=0; i < stylesheets.length; i++) {
-      const stylesheet = stylesheets[i];
-      stylesheet.rel = 'prefetch';
-    }
-  }
-  const enableStylesheet = (stylesheets) => {
-    for (let i=0; i < stylesheets.length; i++) {
-      const stylesheet = stylesheets[i];
-      stylesheet.rel = 'stylesheet';
-    }
-  }
-  const manageTransitions = (selector, allowTransitions) => {
-    const els = window.document.querySelectorAll(selector);
-    for (let i=0; i < els.length; i++) {
-      const el = els[i];
-      if (allowTransitions) {
-        el.classList.remove('notransition');
-      } else {
-        el.classList.add('notransition');
-      }
-    }
-  }
-  const toggleColorMode = (alternate) => {
-    // Switch the stylesheets
-    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-    manageTransitions('#quarto-margin-sidebar .nav-link', false);
-    if (alternate) {
-      enableStylesheet(alternateStylesheets);
-      for (const sheetNode of alternateStylesheets) {
-        if (sheetNode.id === "quarto-bootstrap") {
-          toggleBodyColorMode(sheetNode);
-        }
-      }
-    } else {
-      disableStylesheet(alternateStylesheets);
-      toggleBodyColorPrimary();
-    }
-    manageTransitions('#quarto-margin-sidebar .nav-link', true);
-    // Switch the toggles
-    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-    for (let i=0; i < toggles.length; i++) {
-      const toggle = toggles[i];
-      if (toggle) {
-        if (alternate) {
-          toggle.classList.add("alternate");     
-        } else {
-          toggle.classList.remove("alternate");
-        }
-      }
-    }
-    // Hack to workaround the fact that safari doesn't
-    // properly recolor the scrollbar when toggling (#1455)
-    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-      manageTransitions("body", false);
-      window.scrollTo(0, 1);
-      setTimeout(() => {
-        window.scrollTo(0, 0);
-        manageTransitions("body", true);
-      }, 40);  
-    }
-  }
-  const isFileUrl = () => { 
-    return window.location.protocol === 'file:';
-  }
-  const hasAlternateSentinel = () => {  
-    let styleSentinel = getColorSchemeSentinel();
-    if (styleSentinel !== null) {
-      return styleSentinel === "alternate";
-    } else {
-      return false;
-    }
-  }
-  const setStyleSentinel = (alternate) => {
-    const value = alternate ? "alternate" : "default";
-    if (!isFileUrl()) {
-      window.localStorage.setItem("quarto-color-scheme", value);
-    } else {
-      localAlternateSentinel = value;
-    }
-  }
-  const getColorSchemeSentinel = () => {
-    if (!isFileUrl()) {
-      const storageValue = window.localStorage.getItem("quarto-color-scheme");
-      return storageValue != null ? storageValue : localAlternateSentinel;
-    } else {
-      return localAlternateSentinel;
-    }
-  }
-  let localAlternateSentinel = 'default';
-  // Dark / light mode switch
-  window.quartoToggleColorScheme = () => {
-    // Read the current dark / light value 
-    let toAlternate = !hasAlternateSentinel();
-    toggleColorMode(toAlternate);
-    setStyleSentinel(toAlternate);
-  };
-  // Ensure there is a toggle, if there isn't float one in the top right
-  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-    const a = window.document.createElement('a');
-    a.classList.add('top-right');
-    a.classList.add('quarto-color-scheme-toggle');
-    a.href = "";
-    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-    const i = window.document.createElement("i");
-    i.classList.add('bi');
-    a.appendChild(i);
-    window.document.body.appendChild(a);
-  }
-  // Switch to dark mode if need be
-  if (hasAlternateSentinel()) {
-    toggleColorMode(true);
-  } else {
-    toggleColorMode(false);
-  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
