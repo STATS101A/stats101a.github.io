@@ -8,7 +8,9 @@ $font-family-base: 'Montserrat', sans-serif;
 /*-- scss:rules --*/
 #quarto-sidebar {
   background-color: #003B5C;
-  color: #FFB81C;
+}
+.sidebar-menu-container {
+  color: #FFB81C; 
 }
 .sidebar-title {
   color: #FFB81C; 
