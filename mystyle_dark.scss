@@ -6,11 +6,14 @@ $font-family-base: 'Montserrat', sans-serif;
 
 
 /*-- scss:rules --*/
-#quarto-sidebar  {
+#quarto-sidebar {
   background-color: #003B5C;
 }
+#quarto-sidebar {
+  color: #FFB81C;
+}
 .sidebar-title {
-  color: #2774ae; 
+  color: #FFB81C; 
 }
 .nav-footer {
   background-color: #003B5C; 
