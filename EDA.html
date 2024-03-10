@@ -220,7 +220,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"code":"webr::install(\"readr\")\nwebr::install(\"knitr\")\nwebr::install(\"tidyverse\")\nwebr::install(\"DT\")\nwebr::install(\"lubridate\")\nwebr::install(\"ggthemes\")\nwebr::install(\"treemapify\")\nwebr::install(\"nnet\")\nwebr::install(\"plotly\")\nwebr::install(\"stargazer\")\n\nlibrary(readr)\nlibrary(tidyverse)\nlibrary(DT)\nlibrary(knitr)\nlibrary(lubridate)\nlibrary(ggthemes)\nlibrary(treemapify)\nlibrary(nnet)\nlibrary(plotly)\nlibrary(stargazer)","id":1,"options":{"fig-width":7,"fig-cap":"","results":"markup","out-height":"","message":"true","warning":"true","comment":"","fig-height":5,"label":"unnamed-chunk-1","output":"true","context":"interactive","out-width":"700px","dpi":72,"classes":"","autorun":"false"}},{"code":"library(readr)\ntrain <- read_csv(\"https://raw.githubusercontent.com/lewv/S24STATS101A/main/data/train.csv.gz\")","id":2,"options":{"fig-width":7,"fig-cap":"","results":"markup","out-height":"","message":"true","warning":"true","comment":"","fig-height":5,"label":"unnamed-chunk-2","output":"true","context":"interactive","out-width":"700px","dpi":72,"classes":"","autorun":"false"}},{"code":"datatable(train)","id":3,"options":{"fig-width":7,"fig-cap":"","results":"markup","out-height":"","message":"true","warning":"true","comment":"","fig-height":5,"label":"unnamed-chunk-3","output":"true","context":"interactive","out-width":"700px","dpi":72,"classes":"","autorun":"false"}},{"code":"glimpse(train)","id":4,"options":{"fig-width":7,"fig-cap":"","results":"markup","out-height":"","message":"true","warning":"true","comment":"","fig-height":5,"label":"unnamed-chunk-4","output":"true","context":"interactive","out-width":"700px","dpi":72,"classes":"","autorun":"false"}},{"code":"# Plotting TreeMap Graph \n\nggplot(train, aes(area=OutcomeType,fill=AnimalType,label=SexuponOutcome))+ \n  geom_treemap(layout=\"squarified\")+ \n  geom_treemap_text(place = \"centre\",size = 12)+ \n  labs(title=\"Customized Tree Plot using ggplot and treemapify in R\")","id":5,"options":{"fig-width":7,"fig-cap":"","results":"markup","out-height":"","message":"true","warning":"true","comment":"","fig-height":5,"label":"unnamed-chunk-5","output":"true","context":"interactive","out-width":"700px","dpi":72,"classes":"","autorun":"false"}}];
+globalThis.qwebrCellDetails = [{"id":1,"code":"webr::install(\"readr\")\nwebr::install(\"knitr\")\nwebr::install(\"tidyverse\")\nwebr::install(\"DT\")\nwebr::install(\"lubridate\")\nwebr::install(\"ggthemes\")\nwebr::install(\"treemapify\")\nwebr::install(\"nnet\")\nwebr::install(\"plotly\")\nwebr::install(\"stargazer\")\n\nlibrary(readr)\nlibrary(tidyverse)\nlibrary(DT)\nlibrary(knitr)\nlibrary(lubridate)\nlibrary(ggthemes)\nlibrary(treemapify)\nlibrary(nnet)\nlibrary(plotly)\nlibrary(stargazer)","options":{"comment":"","warning":"true","label":"unnamed-chunk-1","context":"interactive","results":"markup","message":"true","fig-height":5,"dpi":72,"out-height":"","fig-cap":"","fig-width":7,"classes":"","output":"true","autorun":"false","out-width":"700px"}},{"id":2,"code":"library(readr)\ntrain <- read_csv(\"https://raw.githubusercontent.com/lewv/S24STATS101A/main/data/train.csv.gz\")","options":{"comment":"","warning":"true","label":"unnamed-chunk-2","context":"interactive","results":"markup","message":"true","fig-height":5,"dpi":72,"out-height":"","fig-cap":"","fig-width":7,"classes":"","output":"true","autorun":"false","out-width":"700px"}},{"id":3,"code":"datatable(train)","options":{"comment":"","warning":"true","label":"unnamed-chunk-3","context":"interactive","results":"markup","message":"true","fig-height":5,"dpi":72,"out-height":"","fig-cap":"","fig-width":7,"classes":"","output":"true","autorun":"false","out-width":"700px"}},{"id":4,"code":"glimpse(train)","options":{"comment":"","warning":"true","label":"unnamed-chunk-4","context":"interactive","results":"markup","message":"true","fig-height":5,"dpi":72,"out-height":"","fig-cap":"","fig-width":7,"classes":"","output":"true","autorun":"false","out-width":"700px"}},{"id":5,"code":"# Plotting TreeMap Graph \n\nggplot(train, aes(area=OutcomeType,fill=AnimalType,label=SexuponOutcome))+ \n  geom_treemap(layout=\"squarified\")+ \n  geom_treemap_text(place = \"centre\",size = 12)+ \n  labs(title=\"Customized Tree Plot using ggplot and treemapify in R\")","options":{"comment":"","warning":"true","label":"unnamed-chunk-5","context":"interactive","results":"markup","message":"true","fig-height":5,"dpi":72,"out-height":"","fig-cap":"","fig-width":7,"classes":"","output":"true","autorun":"false","out-width":"700px"}}];
 
 </script><script type="module">
 // Declare startupMessageQWebR globally
@@ -988,13 +988,39 @@ globalThis.qwebrExecuteCode = async function (
       </ul>
 </li>
         <li class="sidebar-item sidebar-item-section">
-      <span class="sidebar-item-text sidebar-link text-start">
- <span class="menu-text">Lectures</span></span>
-  </li>
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
+ <span class="menu-text">Lectures</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./StoryTelling.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lecture01</span></a>
+  </div>
+</li>
+      </ul>
+</li>
         <li class="sidebar-item sidebar-item-section">
-      <span class="sidebar-item-text sidebar-link text-start">
- <span class="menu-text">Activities</span></span>
-  </li>
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+ <span class="menu-text">Activities</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activity 1</span></a>
+  </div>
+</li>
+      </ul>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">

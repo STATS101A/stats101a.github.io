@@ -6,8 +6,11 @@ $font-family-base: 'Montserrat', sans-serif;
 
 
 /*-- scss:rules --*/
+.nav#quarto-sidebar.sidebar.collapse.collapse-horizontal.sidebar-navigation.docked.overflow-auto {
+  background-color: #003B5C; 
+}
 .sidebar-title {
-  color: #005587; 
+  color: #FFFFFF; 
 }
 .nav-footer {
   background-color: #003B5C; 

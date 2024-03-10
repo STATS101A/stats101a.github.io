@@ -220,7 +220,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"id":1,"options":{"fig-width":7,"results":"markup","autorun":"false","dpi":72,"label":"unnamed-chunk-1","warning":"true","output":"true","fig-cap":"","out-width":"700px","comment":"","classes":"","fig-height":5,"context":"interactive","message":"true","out-height":""},"code":"webr::install(\"ggplot2\")\nwebr::install(\"knitr\")\nwebr::install(\"dplyr\")\nwebr::install(\"tidyr\")\nlibrary(ggplot2)\nlibrary(knitr)\nlibrary(dplyr)\nlibrary(tidyr)"},{"id":2,"options":{"fig-width":7,"results":"markup","autorun":"false","dpi":72,"label":"unnamed-chunk-2","warning":"true","output":"true","fig-cap":"","out-width":"700px","comment":"","classes":"","fig-height":5,"context":"interactive","message":"true","out-height":""},"code":"Heights <-read.csv(\"https://raw.githubusercontent.com/lewv/S24STATS101A/main/data/Heights.csv\",\n               header=TRUE, sep=\",\")\ndim(Heights)\nhead(Heights)\nsummary(Heights)"}];
+globalThis.qwebrCellDetails = [{"code":"webr::install(\"ggplot2\")\nwebr::install(\"knitr\")\nwebr::install(\"dplyr\")\nwebr::install(\"tidyr\")\nlibrary(ggplot2)\nlibrary(knitr)\nlibrary(dplyr)\nlibrary(tidyr)","id":1,"options":{"fig-cap":"","out-width":"700px","comment":"","context":"interactive","autorun":"false","dpi":72,"output":"true","classes":"","warning":"true","results":"markup","label":"unnamed-chunk-1","fig-width":7,"fig-height":5,"out-height":"","message":"true"}},{"code":"Heights <-read.csv(\"https://raw.githubusercontent.com/lewv/S24STATS101A/main/data/Heights.csv\",\n               header=TRUE, sep=\",\")\ndim(Heights)\nhead(Heights)\nsummary(Heights)","id":2,"options":{"fig-cap":"","out-width":"700px","comment":"","context":"interactive","autorun":"false","dpi":72,"output":"true","classes":"","warning":"true","results":"markup","label":"unnamed-chunk-2","fig-width":7,"fig-height":5,"out-height":"","message":"true"}}];
 
 </script><script type="module">
 // Declare startupMessageQWebR globally
@@ -943,9 +943,7 @@ globalThis.qwebrExecuteCode = async function (
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
-      Statistics 101A
-      </li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./StoryTelling.html">Lectures</a></li><li class="breadcrumb-item"><a href="./StoryTelling.html">Lecture01</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -988,13 +986,39 @@ globalThis.qwebrExecuteCode = async function (
       </ul>
 </li>
         <li class="sidebar-item sidebar-item-section">
-      <span class="sidebar-item-text sidebar-link text-start">
- <span class="menu-text">Lectures</span></span>
-  </li>
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Lectures</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./StoryTelling.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Lecture01</span></a>
+  </div>
+</li>
+      </ul>
+</li>
         <li class="sidebar-item sidebar-item-section">
-      <span class="sidebar-item-text sidebar-link text-start">
- <span class="menu-text">Activities</span></span>
-  </li>
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+ <span class="menu-text">Activities</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activity 1</span></a>
+  </div>
+</li>
+      </ul>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">

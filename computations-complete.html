@@ -219,7 +219,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"id":1,"code":"library(ggplot2)","options":{"fig-cap":"","autorun":"false","message":"true","warning":"true","results":"markup","out-width":"700px","fig-width":7,"out-height":"","echo":"false","output":"true","fig-height":5,"classes":"","comment":"","label":"load-packages","dpi":72,"context":"interactive"}},{"id":2,"code":"names(mpg)","options":{"fig-cap":"","message":"true","warning":"true","results":"markup","out-width":"700px","fig-width":7,"out-height":"","autorun":"false","output":"true","fig-height":5,"classes":"","comment":"","label":"unnamed-chunk-2","dpi":72,"context":"interactive"}},{"id":3,"code":"\nmean_cty <- round(mean(mpg$cty), 2)\nmean_hwy <- round(mean(mpg$hwy), 2)","options":{"fig-cap":"","autorun":"false","message":"true","warning":"true","results":"markup","out-width":"700px","fig-width":7,"out-height":"","echo":"false","output":"true","fig-height":5,"classes":"","comment":"","label":"unnamed-chunk-3","dpi":72,"context":"interactive"}},{"id":4,"code":"#|   - \"Color by number of cylinders\"\n#|   - \"Color by engine displacement, in liters\"\n\nggplot(mpg, aes(x = hwy, y = cty, color = cyl)) +\n  geom_point(alpha = 0.5, size = 2) +\n  scale_color_viridis_c() +\n  theme_minimal()","options":{"fig-cap":"City and highway mileage for 38 popular models of cars.","warning":"true","column":"page","output":"true","cache":"true","label":"fig-mpg","dpi":72,"message":"true","results":"markup","fig-width":7,"fig-subcap":"","layout-ncol":"2","context":"interactive","out-height":"","classes":"","comment":"","fig-height":5,"autorun":"false","out-width":"700px"}},{"id":5,"code":"ggplot(mpg, aes(x = hwy, y = cty, color = displ)) +\n  geom_point(alpha = 0.5, size = 2) +\n  scale_color_viridis_c(option = \"E\") +\n  theme_minimal()","options":{"fig-cap":"","message":"true","warning":"true","results":"markup","out-width":"700px","fig-width":7,"out-height":"","autorun":"false","output":"true","fig-height":5,"classes":"","comment":"","label":"unnamed-chunk-5","dpi":72,"context":"interactive"}},{"id":6,"code":"  \nmodel1 <- lm(mpg$cty ~ mpg$hwy) \nsummary(model1)\n\n# you can try alternative models too!\n  ","options":{"fig-cap":"","message":"true","warning":"true","results":"markup","out-width":"700px","fig-width":7,"out-height":"","autorun":"false","output":"true","fig-height":5,"classes":"","comment":"","label":"unnamed-chunk-6","dpi":72,"context":"interactive"}},{"id":7,"code":"names(model1)","options":{"fig-cap":"","message":"true","warning":"true","results":"markup","out-width":"700px","fig-width":7,"out-height":"","autorun":"false","output":"true","fig-height":5,"classes":"","comment":"","label":"unnamed-chunk-7","dpi":72,"context":"interactive"}},{"id":8,"code":"par(mfrow=c(2,2)) \nplot(model1)\n","options":{"fig-cap":"","message":"true","warning":"true","results":"markup","out-width":"700px","fig-width":7,"out-height":"","autorun":"false","output":"true","fig-height":5,"classes":"","comment":"","label":"unnamed-chunk-8","dpi":72,"context":"interactive"}},{"id":9,"code":"df <- read.csv(\"https://raw.githubusercontent.com/esmaeilifardi/DecisionTreeClassifier---Penguins.csv-Dataset/main/penguins.csv\")\nhead(df)","options":{"fig-cap":"","message":"true","warning":"true","results":"markup","out-width":"700px","fig-width":7,"out-height":"","autorun":"false","output":"true","fig-height":5,"classes":"","comment":"","label":"unnamed-chunk-9","dpi":72,"context":"interactive"}}];
+globalThis.qwebrCellDetails = [{"code":"library(ggplot2)","options":{"label":"load-packages","context":"interactive","warning":"true","fig-cap":"","echo":"false","fig-width":7,"message":"true","comment":"","out-height":"","output":"true","autorun":"false","results":"markup","classes":"","dpi":72,"fig-height":5,"out-width":"700px"},"id":1},{"code":"names(mpg)","options":{"label":"unnamed-chunk-2","context":"interactive","warning":"true","fig-cap":"","fig-width":7,"message":"true","comment":"","out-height":"","output":"true","autorun":"false","results":"markup","classes":"","dpi":72,"fig-height":5,"out-width":"700px"},"id":2},{"code":"\nmean_cty <- round(mean(mpg$cty), 2)\nmean_hwy <- round(mean(mpg$hwy), 2)","options":{"label":"unnamed-chunk-3","context":"interactive","warning":"true","fig-cap":"","echo":"false","fig-width":7,"message":"true","comment":"","out-height":"","output":"true","autorun":"false","results":"markup","classes":"","dpi":72,"fig-height":5,"out-width":"700px"},"id":3},{"code":"#|   - \"Color by number of cylinders\"\n#|   - \"Color by engine displacement, in liters\"\n\nggplot(mpg, aes(x = hwy, y = cty, color = cyl)) +\n  geom_point(alpha = 0.5, size = 2) +\n  scale_color_viridis_c() +\n  theme_minimal()","options":{"column":"page","classes":"","message":"true","fig-width":7,"comment":"","fig-subcap":"","layout-ncol":"2","label":"fig-mpg","context":"interactive","warning":"true","fig-cap":"City and highway mileage for 38 popular models of cars.","cache":"true","out-height":"","out-width":"700px","results":"markup","fig-height":5,"dpi":72,"autorun":"false","output":"true"},"id":4},{"code":"ggplot(mpg, aes(x = hwy, y = cty, color = displ)) +\n  geom_point(alpha = 0.5, size = 2) +\n  scale_color_viridis_c(option = \"E\") +\n  theme_minimal()","options":{"label":"unnamed-chunk-5","context":"interactive","warning":"true","fig-cap":"","fig-width":7,"message":"true","comment":"","out-height":"","output":"true","autorun":"false","results":"markup","classes":"","dpi":72,"fig-height":5,"out-width":"700px"},"id":5},{"code":"  \nmodel1 <- lm(mpg$cty ~ mpg$hwy) \nsummary(model1)\n\n# you can try alternative models too!\n  ","options":{"label":"unnamed-chunk-6","context":"interactive","warning":"true","fig-cap":"","fig-width":7,"message":"true","comment":"","out-height":"","output":"true","autorun":"false","results":"markup","classes":"","dpi":72,"fig-height":5,"out-width":"700px"},"id":6},{"code":"names(model1)","options":{"label":"unnamed-chunk-7","context":"interactive","warning":"true","fig-cap":"","fig-width":7,"message":"true","comment":"","out-height":"","output":"true","autorun":"false","results":"markup","classes":"","dpi":72,"fig-height":5,"out-width":"700px"},"id":7},{"code":"par(mfrow=c(2,2)) \nplot(model1)\n","options":{"label":"unnamed-chunk-8","context":"interactive","warning":"true","fig-cap":"","fig-width":7,"message":"true","comment":"","out-height":"","output":"true","autorun":"false","results":"markup","classes":"","dpi":72,"fig-height":5,"out-width":"700px"},"id":8},{"code":"df <- read.csv(\"https://raw.githubusercontent.com/esmaeilifardi/DecisionTreeClassifier---Penguins.csv-Dataset/main/penguins.csv\")\nhead(df)","options":{"label":"unnamed-chunk-9","context":"interactive","warning":"true","fig-cap":"","fig-width":7,"message":"true","comment":"","out-height":"","output":"true","autorun":"false","results":"markup","classes":"","dpi":72,"fig-height":5,"out-width":"700px"},"id":9}];
 
 </script><script type="module">
 // Declare startupMessageQWebR globally
@@ -987,13 +987,39 @@ globalThis.qwebrExecuteCode = async function (
       </ul>
 </li>
         <li class="sidebar-item sidebar-item-section">
-      <span class="sidebar-item-text sidebar-link text-start">
- <span class="menu-text">Lectures</span></span>
-  </li>
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
+ <span class="menu-text">Lectures</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./StoryTelling.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lecture01</span></a>
+  </div>
+</li>
+      </ul>
+</li>
         <li class="sidebar-item sidebar-item-section">
-      <span class="sidebar-item-text sidebar-link text-start">
- <span class="menu-text">Activities</span></span>
-  </li>
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+ <span class="menu-text">Activities</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activity 1</span></a>
+  </div>
+</li>
+      </ul>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">
