@@ -227,7 +227,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"code":"webr::install(\"readr\")\nwebr::install(\"knitr\")\nwebr::install(\"tidyverse\")\nwebr::install(\"DT\")\nwebr::install(\"lubridate\")\nwebr::install(\"ggthemes\")\nwebr::install(\"treemapify\")\nwebr::install(\"nnet\")\nwebr::install(\"plotly\")\nwebr::install(\"stargazer\")\n\nlibrary(readr)\nlibrary(tidyverse)\nlibrary(DT)\nlibrary(knitr)\nlibrary(lubridate)\nlibrary(ggthemes)\nlibrary(treemapify)\nlibrary(nnet)\nlibrary(plotly)\nlibrary(stargazer)","id":1,"options":{"out-width":"700px","label":"unnamed-chunk-1","autorun":"false","out-height":"","context":"interactive","warning":"true","fig-height":5,"classes":"","message":"true","dpi":72,"comment":"","fig-cap":"","fig-width":7,"output":"true","results":"markup"}},{"code":"library(readr)\ntrain <- read_csv(\"https://raw.githubusercontent.com/lewv/S24STATS101A/main/data/train.csv.gz\")","id":2,"options":{"out-width":"700px","label":"unnamed-chunk-2","autorun":"false","out-height":"","context":"interactive","warning":"true","fig-height":5,"classes":"","message":"true","dpi":72,"comment":"","fig-cap":"","fig-width":7,"output":"true","results":"markup"}},{"code":"datatable(train)","id":3,"options":{"out-width":"700px","label":"unnamed-chunk-3","autorun":"false","out-height":"","context":"interactive","warning":"true","fig-height":5,"classes":"","message":"true","dpi":72,"comment":"","fig-cap":"","fig-width":7,"output":"true","results":"markup"}},{"code":"glimpse(train)","id":4,"options":{"out-width":"700px","label":"unnamed-chunk-4","autorun":"false","out-height":"","context":"interactive","warning":"true","fig-height":5,"classes":"","message":"true","dpi":72,"comment":"","fig-cap":"","fig-width":7,"output":"true","results":"markup"}},{"code":"# Plotting TreeMap Graph \n\nggplot(train, aes(area=OutcomeType,fill=AnimalType,label=SexuponOutcome))+ \n  geom_treemap(layout=\"squarified\")+ \n  geom_treemap_text(place = \"centre\",size = 12)+ \n  labs(title=\"Customized Tree Plot using ggplot and treemapify in R\")","id":5,"options":{"out-width":"700px","label":"unnamed-chunk-5","autorun":"false","out-height":"","context":"interactive","warning":"true","fig-height":5,"classes":"","message":"true","dpi":72,"comment":"","fig-cap":"","fig-width":7,"output":"true","results":"markup"}}];
+globalThis.qwebrCellDetails = [{"options":{"results":"markup","context":"interactive","output":"true","label":"unnamed-chunk-1","fig-height":5,"classes":"","autorun":"false","message":"true","comment":"","fig-width":7,"dpi":72,"out-width":"700px","out-height":"","warning":"true","fig-cap":""},"id":1,"code":"webr::install(\"readr\")\nwebr::install(\"knitr\")\nwebr::install(\"tidyverse\")\nwebr::install(\"DT\")\nwebr::install(\"lubridate\")\nwebr::install(\"ggthemes\")\nwebr::install(\"treemapify\")\nwebr::install(\"nnet\")\nwebr::install(\"plotly\")\nwebr::install(\"stargazer\")\n\nlibrary(readr)\nlibrary(tidyverse)\nlibrary(DT)\nlibrary(knitr)\nlibrary(lubridate)\nlibrary(ggthemes)\nlibrary(treemapify)\nlibrary(nnet)\nlibrary(plotly)\nlibrary(stargazer)"},{"options":{"results":"markup","context":"interactive","output":"true","label":"unnamed-chunk-2","fig-height":5,"classes":"","autorun":"false","message":"true","comment":"","fig-width":7,"dpi":72,"out-width":"700px","out-height":"","warning":"true","fig-cap":""},"id":2,"code":"library(readr)\ntrain <- read_csv(\"https://raw.githubusercontent.com/lewv/S24STATS101A/main/data/train.csv.gz\")"},{"options":{"results":"markup","context":"interactive","output":"true","label":"unnamed-chunk-3","fig-height":5,"classes":"","autorun":"false","message":"true","comment":"","fig-width":7,"dpi":72,"out-width":"700px","out-height":"","warning":"true","fig-cap":""},"id":3,"code":"datatable(train)"},{"options":{"results":"markup","context":"interactive","output":"true","label":"unnamed-chunk-4","fig-height":5,"classes":"","autorun":"false","message":"true","comment":"","fig-width":7,"dpi":72,"out-width":"700px","out-height":"","warning":"true","fig-cap":""},"id":4,"code":"glimpse(train)"},{"options":{"results":"markup","context":"interactive","output":"true","label":"unnamed-chunk-5","fig-height":5,"classes":"","autorun":"false","message":"true","comment":"","fig-width":7,"dpi":72,"out-width":"700px","out-height":"","warning":"true","fig-cap":""},"id":5,"code":"# Plotting TreeMap Graph \n\nggplot(train, aes(area=OutcomeType,fill=AnimalType,label=SexuponOutcome))+ \n  geom_treemap(layout=\"squarified\")+ \n  geom_treemap_text(place = \"centre\",size = 12)+ \n  labs(title=\"Customized Tree Plot using ggplot and treemapify in R\")"}];
 
 </script><script type="module">
 // Declare startupMessageQWebR globally
@@ -1010,11 +1010,8 @@ globalThis.qwebrExecuteCode = async function (
       </div>
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">
 <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./Lecture01.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lecture01</span></a>
-  </div>
-</li>
+ <span class="menu-text">Lecture01</span>
+  </li>
       </ul>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -1027,11 +1024,8 @@ globalThis.qwebrExecuteCode = async function (
       </div>
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">
 <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./about.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Activity 1</span></a>
-  </div>
-</li>
+ <span class="menu-text">Activity 1</span>
+  </li>
       </ul>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -1044,11 +1038,8 @@ globalThis.qwebrExecuteCode = async function (
       </div>
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">
 <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./hw/hw-1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">HW 1</span></a>
-  </div>
-</li>
+ <span class="menu-text">HW 1</span>
+  </li>
       </ul>
 </li>
         <li class="sidebar-item sidebar-item-section">
