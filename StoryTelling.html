@@ -227,7 +227,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"options":{"message":"true","out-width":"700px","warning":"true","context":"interactive","results":"markup","fig-width":7,"fig-cap":"","label":"unnamed-chunk-1","out-height":"","dpi":72,"classes":"","comment":"","fig-height":5,"output":"true","autorun":"false"},"id":1,"code":"webr::install(\"ggplot2\")\nwebr::install(\"knitr\")\nwebr::install(\"dplyr\")\nwebr::install(\"tidyr\")\nlibrary(ggplot2)\nlibrary(knitr)\nlibrary(dplyr)\nlibrary(tidyr)"},{"options":{"message":"true","out-width":"700px","warning":"true","context":"interactive","results":"markup","fig-width":7,"fig-cap":"","label":"unnamed-chunk-2","out-height":"","dpi":72,"classes":"","comment":"","fig-height":5,"output":"true","autorun":"false"},"id":2,"code":"Heights <-read.csv(\"https://raw.githubusercontent.com/lewv/S24STATS101A/main/data/Heights.csv\",\n               header=TRUE, sep=\",\")\ndim(Heights)\nhead(Heights)\nsummary(Heights)"}];
+globalThis.qwebrCellDetails = [{"options":{"output":"true","warning":"true","context":"interactive","out-width":"700px","label":"unnamed-chunk-1","fig-cap":"","autorun":"false","results":"markup","comment":"","fig-width":7,"dpi":72,"message":"true","out-height":"","fig-height":5,"classes":""},"code":"webr::install(\"ggplot2\")\nwebr::install(\"knitr\")\nwebr::install(\"dplyr\")\nwebr::install(\"tidyr\")\nlibrary(ggplot2)\nlibrary(knitr)\nlibrary(dplyr)\nlibrary(tidyr)","id":1},{"options":{"output":"true","warning":"true","context":"interactive","out-width":"700px","label":"unnamed-chunk-2","fig-cap":"","autorun":"false","results":"markup","comment":"","fig-width":7,"dpi":72,"message":"true","out-height":"","fig-height":5,"classes":""},"code":"Heights <-read.csv(\"https://raw.githubusercontent.com/lewv/S24STATS101A/main/data/Heights.csv\",\n               header=TRUE, sep=\",\")\ndim(Heights)\nhead(Heights)\nsummary(Heights)","id":2}];
 
 </script><script type="module">
 // Declare startupMessageQWebR globally
@@ -1513,7 +1513,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/stats101a\.github\.io\/");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
