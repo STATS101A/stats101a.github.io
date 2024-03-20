@@ -63,11 +63,11 @@
     "text": "summarise(across)\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
-    "objectID": "activity/RRefresher.html#descriptive-basics",
-    "href": "activity/RRefresher.html#descriptive-basics",
+    "objectID": "activity/RRefresher.html#descriptive-basics-challenge",
+    "href": "activity/RRefresher.html#descriptive-basics-challenge",
     "title": "R Refresher",
-    "section": "descriptive basics",
-    "text": "descriptive basics\nChallenge (and practice working with webR), in teams, please compute the following for the variable birth_year in the starwars data:\n\nthe first and third quartiles\na decile (e.g., 90th percentile)\nthe number of missing values\nand a count (number) of unique birth years\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+    "section": "descriptive basics challenge",
+    "text": "descriptive basics challenge\nA challenge (and practice working with webR), in teams, please compute the following for the variable birth_year in the starwars data:\n\nthe first and third quartiles\na decile (e.g., 90th percentile)\nthe number of missing values\nand a count (number) of unique birth years\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
     "objectID": "activity/RRefresher.html#conditioninggrouping",
@@ -175,11 +175,11 @@
     "text": "Examples of recent research\n\nLinear Regression Analysis to predict the number of deaths in India due to SARS-CoV-2 at 6 weeks from day 0 (100 cases - March 14th 2020)\nAdaptive Reuse for Sustainable Development and Land Use: A Multivariate Linear Regression Analysis Estimating Key Determinants of Public Perceptions (2023)\nSoybean Yield Estimation and Its Components: A Linear Regression Approach (2020)\nExplainable boosted linear regression for time series forecasting Author links open overlay panel (2021)"
   },
   {
-    "objectID": "lec/Lecture01.html#thesyllabus-hunt",
-    "href": "lec/Lecture01.html#thesyllabus-hunt",
+    "objectID": "lec/Lecture01.html#the-syllabus-hunt",
+    "href": "lec/Lecture01.html#the-syllabus-hunt",
     "title": "Welcome Statistics 101A",
-    "section": "TheSyllabus Hunt",
-    "text": "TheSyllabus Hunt\n\n\nDo we have a TA and section?\n\nYes and Yes\n\nWhat is the TAs name?\n\nJiangliang Geng\n\nDo we have a textbook? Should I buy it?\n\nYes and no (too expensive)\n\nIs there a midterm? Is there a final?\n\nNo and Yes (does anyone know when the final is scheduled)"
+    "section": "The Syllabus Hunt",
+    "text": "The Syllabus Hunt\n\n\nDo we have a TA and section?\n\nYes and Yes\n\nWhat is the TAs name?\n\nJiangliang Geng\n\nDo we have a textbook? Should I buy it?\n\nYes and no (too expensive)\n\nIs there a midterm? Is there a final?\n\nNo and Yes (does anyone know when the final is scheduled)"
   },
   {
     "objectID": "lec/Lecture01.html#the-syllabus-hunt-contd",
@@ -200,7 +200,7 @@
     "href": "lec/Lecture01.html#group-activity-1-10-15-minutes",
     "title": "Welcome Statistics 101A",
     "section": "Group Activity 1 (10-15 minutes)",
-    "text": "Group Activity 1 (10-15 minutes)\n\n\nIf you aren’t already with a group, please join/make one, minimum 3 maximum 6.\nSomeone take a team photo (selfie/grelfie/usie/0.5?) and either share it with your teammates for individual OR upload an annotated copy with first and last names to BruinLearn for credit for attending today.\nThen visit"
+    "text": "Group Activity 1 (10-15 minutes)\n\n\nIf you aren’t already with a group, please join/make one, minimum 3 maximum 6.\nSomeone take a team photo (selfie/grelfie/usie/0.5?) and either share it with your teammates (or everyone take their own, but that’s not very team oriented) for part of credit today\nThe other part - please try the next activity and be prepared to ask questions of us or others if there is something you don’t understand. Upload a screen grab of your code and answer from R to the “descriptive basics challenge”\nPlease visit https://stats101a.github.io/activity/RRefresher.html"
   },
   {
     "objectID": "StoryTelling.html",
