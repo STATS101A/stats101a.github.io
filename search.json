@@ -130,39 +130,53 @@
     "text": "dim(), head(), summary()\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
-    "objectID": "lec/Lecture01.html#interact-relax",
-    "href": "lec/Lecture01.html#interact-relax",
-    "title": "Lecture 1",
-    "section": "Interact & Relax",
-    "text": "Interact & Relax\nLet’s use this time to interact & relax before getting started\n\n\nPlease gather in small groups (minimum 3 classmates, maximum 6)\nIf you don’t know someone please introduce yourself\nIf your group sees someone without a group, please extend an invitation to join"
+    "objectID": "lec/Lecture01.html#todays-outline",
+    "href": "lec/Lecture01.html#todays-outline",
+    "title": "Welcome Statistics 101A",
+    "section": "Today’s Outline",
+    "text": "Today’s Outline\n\n\nWelcome\nWhat is and why regression?\nExplore Data – numerical\nExplore Data – graphical"
   },
   {
-    "objectID": "lec/Lecture01.html#highlight-and-black-background",
-    "href": "lec/Lecture01.html#highlight-and-black-background",
-    "title": "Lecture 1",
-    "section": "Highlight and black background",
-    "text": "Highlight and black background\n\n```{r}\n#| eval: false\n#| code-line-numbers: \"4|5|6\"\nx &lt;- 1:10\nx\nLETTERS[x]\n```"
+    "objectID": "lec/Lecture01.html#welcome-to-stats-101a---what-is-the-class-about",
+    "href": "lec/Lecture01.html#welcome-to-stats-101a---what-is-the-class-about",
+    "title": "Welcome Statistics 101A",
+    "section": "Welcome to Stats 101A - What is the class about?",
+    "text": "Welcome to Stats 101A - What is the class about?\n\nWe begin with a quick review in the form of data exploration to refresh R.\nThe “data analysis” portion of 101A occurs in the context of (linear) regression models\nA regression model is a model of the relationships between some predictors and an outcome (AKA treatments and outcomes, independent and dependent variables)"
   },
   {
-    "objectID": "lec/Lecture01.html#load-packages",
-    "href": "lec/Lecture01.html#load-packages",
-    "title": "Lecture 1",
-    "section": "Load Packages",
-    "text": "Load Packages\n\nlibrary(tidyverse)       # for data wrangling\nlibrary(tidymodels)      # for modeling"
+    "objectID": "lec/Lecture01.html#why-regression",
+    "href": "lec/Lecture01.html#why-regression",
+    "title": "Welcome Statistics 101A",
+    "section": "Why regression?",
+    "text": "Why regression?\n\nRegression is part of the foundation of applied statistics\nRegression (esp Multiple Linear) provides a simple introduction to the concept of modeling relationships between a dependent variable and one or more independent variables.\nMLR sets a the foundation for grasping more complex models such as Neural Networks (and these take you on the path to generative pre-trained transformers - GPTs)\nMLR teaches essential skills in interpreting the coefficients of predictors and assessing models."
   },
   {
-    "objectID": "hw/hw-1.html",
-    "href": "hw/hw-1.html",
-    "title": "hw-1",
+    "objectID": "lec/Lecture01.html#an-open-mind-is-a-beautiful-mind",
+    "href": "lec/Lecture01.html#an-open-mind-is-a-beautiful-mind",
+    "title": "Welcome Statistics 101A",
+    "section": "An open mind is a beautiful mind",
+    "text": "An open mind is a beautiful mind\n\n\nMachine Learning models will beat old MLR on prediction every time\nStory time: a friend selling a Machine Learning Model\nDeep learning models utilize thousands to millions of parameters and non-linear transformations.\nThis complexity makes it difficult to understand how specific input features affect the output predictions.\nThe foundational knowledge from MLR can aid in understanding concepts like feature importance and model evaluation metrics"
+  },
+  {
+    "objectID": "lec/Lecture01.html#thesyllabus-hunt",
+    "href": "lec/Lecture01.html#thesyllabus-hunt",
+    "title": "Welcome Statistics 101A",
+    "section": "TheSyllabus Hunt",
+    "text": "TheSyllabus Hunt\n\n\nDo we have a TA and section?\n\nYes and Yes\n\nWhat is the TAs name?\n\nJiangliang Geng\n\nDo we have a textbook? Should I buy it?\n\nYes and no (too expensive)\n\nIs there a midterm? Is there a final?\n\nNo and Yes (does anyone know when the final is scheduled)"
+  },
+  {
+    "objectID": "lec/Lecture01.html#the-syllabus-hunt-contd",
+    "href": "lec/Lecture01.html#the-syllabus-hunt-contd",
+    "title": "Welcome Statistics 101A",
+    "section": "The Syllabus Hunt (cont’d)",
+    "text": "The Syllabus Hunt (cont’d)\n\n\n\nWhen are office hours?\n\nWednesdays 3:30pm - 5:30pm (in person), Fridays 8:30am - 10am (Zoom), and by appointment (Zoom)\n\nWhat software should I use?\n\nEverything is written in R but if you want to solve an assignment in Python you may.\n\nCan I use ChatGPT?\n\nYes\n\nIf I get sick, what should I do?\n\nStay home and e-mail me before class to be excused if you do not have a doctor’s note"
+  },
+  {
+    "objectID": "lec/Lecture01.html#section",
+    "href": "lec/Lecture01.html#section",
+    "title": "Welcome Statistics 101A",
     "section": "",
-    "text": "Please upload your materials to be graded to BruinLearn"
-  },
-  {
-    "objectID": "hw/Assignment1.html",
-    "href": "hw/Assignment1.html",
-    "title": "Homework 1",
-    "section": "",
-    "text": "You may discuss homework problems with other students, but you must write the assignment yourself.\nPlease combine all your answers, the computer code and the figures into one PDF file, and submit a copy to BruinLearn.\nGrading: 5 points total is 20.\nDue date: 11:59 PM April 13th 2024\nProblem 1\nOn Groundhog Day, February 2, a famous groundhog in Punxsutawney, PA is used to predict whether a winter will be long or not based on whether or not he sees his shadow. I collected data on whether he saw his shadow or not from here. I stored some of this data in this table.\nAlthough Phil is on the East Coast, I wondered if the information says anything about whether or not we will experience a rainy winter out here in California. For this, I found rainfall data, and saved it in a table. To see how this was extracted see this notebook.\n\nMake a boxplot of the mean monthly rainfall (total annual rainfall divided by 12 months) rainfall in Northern California comparing the years Phil sees his shadow versus the years he does not. In Piazza, some people used February instead of mean monthly rainfall. This is OK as well.\nConstruct a 93% confidence interval for the difference between the mean monthly rainfall (total annual rainfall divided by 12 months) in years Phil sees his shadow and years he does not. What assumptions / model are you using?\nInterpret the procedure used to construct in part 2. What do we really know about confidence intervals?\nAt level, \\(\\alpha = 0.05\\) would you reject the null hypothesis that the average rainfall in Northern California during the month of February was the same in years Phil sees his shadow versus years he does not?\nWhat assumptions are you making in forming your confidence interval and in your hypothesis test?\nQuestion 2\nIn Question 1, part 4 above, you are asked to carry out a hypothesis test. In part 5, you are asked to justify your confidence interval and hypothesis test. Both are typically based on a \\(T\\) statistic of some form.\n\nWrite functions in R to generate new data sets for the two different groups of years, calling them shadow and noshadow. The functions should be such that you can specify the average rainfall within the two years separately, as well as the variability of the rainfall within those years (for example, you might use rnorm with different mean and variance parameters).\nUsing your two functions above, simulate data under the null hypothesis that the data from shadow years is the same as the data from noshadow years, computing the \\(T\\) statistic each time. Plot a density of a sample of 5000 such \\(T\\) statistics, overlaying it with a “true” density that holds under the null hypothesis. Explain how these densities relate to the test you carried out in Question 1, part 4.\nAgain using the same two functions, simulate data under the null hypothesis that the average rainfall from shadow years is the same as the average rainfall from noshadow years, allowing for the possibility that the variability of the average is different among the two groups. The function t.test allows specifying var.equal to be true or false. Compare the density of the \\(T\\) statistics when the variability is not the same within the two groups. There are 4 possibilities (2 choices of variances for shadow and noshadow, and setting var.equal to be TRUE or FALSE). So we should see 4 histograms possibly comparing to the “true” density of part 2.\nQuestion 3\nThe data set walleye in the package alr4 (remember you may have to run install.packages(\"alr4\")) of data measured on walleye fish in Wisconsin.\n\nCreate a boxplot of length, for age in 5:8.\nCompute the sample mean, sample standard deviation length in the four groups.\nCreate a histogram of length within age of 5:8 putting the plots in a 2x2 grid in one file.\nCompute a 95% confidence interval for the difference in length in years 5 and 7. What assumptions are you making?\nAt level \\(\\alpha=10\\%\\), test the null hypothesis that the average length in the group age==5 is the same as the in the group age==7. What assumptions are you making? What can you conclude?\nRepeat the test in 5. using the function lm.\nQuestion 4 (RABE)\n\nUse the anscombe data in R. Attach the table using the command attach.\nPlot the 4 data sets (x1,y1), (x2,y2), (x3,y3), (x4,y4) on a 2-by-2 grid of plots using the commands plot and par(mfrow=c(2,2)). Add the number of the dataset to each plot as the main title on each plot.\n\nFit a regression model to the data sets:\n\ny1 ~ x1\ny2 ~ x2\ny3 ~ x3\ny4 ~ x4\n\nusing the command lm. Verify that all the fitted models have the exact same coefficients (up to numerical tolerance).\n\nUsing the command cor, compute the sample correlation for each data set.\nFit the same models in 3. but with the x and y reversed. Using the command summary, does anything about the results stay the same when you reverse x and y?\nCompute the \\(SSE, SST\\) and \\(R^2\\) value for each data set. Use the commands mean, sum, predict and / or resid. (Use the original models, i.e. y1 ~ x1 so only 4 \\(SSE\\) values)\nUsing the command abline, replot the data, adding the regression line to each plot. (Use the original models, i.e. y1 ~ x1 so only 4 plots)"
+    "text": "The grade breakdown is:\n\n\n25% Five In-Class Quizzes\n\nGiven at the end of lecture in Week 2, 4, 6, 8, and 10\nWill drop your lowest score, there are no makeup quizzes\nCan be excused with acceptable documentation (e.g., doctor’s note, police report)\nIf you have CAE accommodations, you can schedule a quiz time through their office.\n\n20% Five Homework Assignments\n\nDue on Fridays in Week 2, 3, 5, 7, and 9\nWill keep all of your homework scores.\n\n20% Attending Class\n\n1% for each meeting/in class activity (19 meetings + 1 no meeting on a holiday)\nOnly excused with acceptable documentation or e-mail stating illness\n\n15% Final Exam\n\nScheduled for Wednesday June 12, 2024 3pm - 6pm\nLocation TBD around 9th week\nIf you have CAE accommodations, you should schedule your final through their office.\n\n20% Working with your TA during section.\n\nYour TA will lead you through additional material designed to augment your training.\nYour TA will determine the specific grading criteria."
   },
   {
     "objectID": "RRefresher.html",
@@ -268,6 +282,41 @@
     "title": "R Refresher",
     "section": "Five minute ggplot refresher",
     "text": "Five minute ggplot refresher\nIf there is only one package you need in R, it’s ggplot. It’s simple and logical and flows with data beautifully. We can use penguins from the palmerpenguins library.\nggplot needs to know what data you plan to use and it needs to have an aesthetic (aes) specified.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nNo error, but no graphic. All we have done is specified the data and given ggplot a sense of how the graphic should appear (x, y, color) as it relates to the features.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nThe “+” separates “layers”. Think of ggplot as like making a cake, you lay down the foundation and then you start decorating. Next up, the geom_ which tell ggplot how the features should be plotted.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nThat is just about it. I do recommend you learn how to “facet” (condition) the plots:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nread “as a function of island”, if you wanted island on the rows, move to facet_grid()\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\na better use of facet_grid\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nThe remaining functions deal with appearance such as labels, legends and maybe adding additional geoms:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "hw/Assignment1.html",
+    "href": "hw/Assignment1.html",
+    "title": "Homework 1",
+    "section": "",
+    "text": "You may discuss homework problems with other students, but you must write the assignment yourself.\nPlease combine all your answers, the computer code and the figures into one PDF file, and submit a copy to BruinLearn.\nGrading: 5 points total is 20.\nDue date: 11:59 PM April 13th 2024\nProblem 1\nOn Groundhog Day, February 2, a famous groundhog in Punxsutawney, PA is used to predict whether a winter will be long or not based on whether or not he sees his shadow. I collected data on whether he saw his shadow or not from here. I stored some of this data in this table.\nAlthough Phil is on the East Coast, I wondered if the information says anything about whether or not we will experience a rainy winter out here in California. For this, I found rainfall data, and saved it in a table. To see how this was extracted see this notebook.\n\nMake a boxplot of the mean monthly rainfall (total annual rainfall divided by 12 months) rainfall in Northern California comparing the years Phil sees his shadow versus the years he does not. In Piazza, some people used February instead of mean monthly rainfall. This is OK as well.\nConstruct a 93% confidence interval for the difference between the mean monthly rainfall (total annual rainfall divided by 12 months) in years Phil sees his shadow and years he does not. What assumptions / model are you using?\nInterpret the procedure used to construct in part 2. What do we really know about confidence intervals?\nAt level, \\(\\alpha = 0.05\\) would you reject the null hypothesis that the average rainfall in Northern California during the month of February was the same in years Phil sees his shadow versus years he does not?\nWhat assumptions are you making in forming your confidence interval and in your hypothesis test?\nQuestion 2\nIn Question 1, part 4 above, you are asked to carry out a hypothesis test. In part 5, you are asked to justify your confidence interval and hypothesis test. Both are typically based on a \\(T\\) statistic of some form.\n\nWrite functions in R to generate new data sets for the two different groups of years, calling them shadow and noshadow. The functions should be such that you can specify the average rainfall within the two years separately, as well as the variability of the rainfall within those years (for example, you might use rnorm with different mean and variance parameters).\nUsing your two functions above, simulate data under the null hypothesis that the data from shadow years is the same as the data from noshadow years, computing the \\(T\\) statistic each time. Plot a density of a sample of 5000 such \\(T\\) statistics, overlaying it with a “true” density that holds under the null hypothesis. Explain how these densities relate to the test you carried out in Question 1, part 4.\nAgain using the same two functions, simulate data under the null hypothesis that the average rainfall from shadow years is the same as the average rainfall from noshadow years, allowing for the possibility that the variability of the average is different among the two groups. The function t.test allows specifying var.equal to be true or false. Compare the density of the \\(T\\) statistics when the variability is not the same within the two groups. There are 4 possibilities (2 choices of variances for shadow and noshadow, and setting var.equal to be TRUE or FALSE). So we should see 4 histograms possibly comparing to the “true” density of part 2.\nQuestion 3\nThe data set walleye in the package alr4 (remember you may have to run install.packages(\"alr4\")) of data measured on walleye fish in Wisconsin.\n\nCreate a boxplot of length, for age in 5:8.\nCompute the sample mean, sample standard deviation length in the four groups.\nCreate a histogram of length within age of 5:8 putting the plots in a 2x2 grid in one file.\nCompute a 95% confidence interval for the difference in length in years 5 and 7. What assumptions are you making?\nAt level \\(\\alpha=10\\%\\), test the null hypothesis that the average length in the group age==5 is the same as the in the group age==7. What assumptions are you making? What can you conclude?\nRepeat the test in 5. using the function lm.\nQuestion 4 (RABE)\n\nUse the anscombe data in R. Attach the table using the command attach.\nPlot the 4 data sets (x1,y1), (x2,y2), (x3,y3), (x4,y4) on a 2-by-2 grid of plots using the commands plot and par(mfrow=c(2,2)). Add the number of the dataset to each plot as the main title on each plot.\n\nFit a regression model to the data sets:\n\ny1 ~ x1\ny2 ~ x2\ny3 ~ x3\ny4 ~ x4\n\nusing the command lm. Verify that all the fitted models have the exact same coefficients (up to numerical tolerance).\n\nUsing the command cor, compute the sample correlation for each data set.\nFit the same models in 3. but with the x and y reversed. Using the command summary, does anything about the results stay the same when you reverse x and y?\nCompute the \\(SSE, SST\\) and \\(R^2\\) value for each data set. Use the commands mean, sum, predict and / or resid. (Use the original models, i.e. y1 ~ x1 so only 4 \\(SSE\\) values)\nUsing the command abline, replot the data, adding the regression line to each plot. (Use the original models, i.e. y1 ~ x1 so only 4 plots)"
+  },
+  {
+    "objectID": "hw/hw-1.html",
+    "href": "hw/hw-1.html",
+    "title": "hw-1",
+    "section": "",
+    "text": "Please upload your materials to be graded to BruinLearn"
+  },
+  {
+    "objectID": "lec/examples.html#interact-relax",
+    "href": "lec/examples.html#interact-relax",
+    "title": "Lecture 1",
+    "section": "Interact & Relax",
+    "text": "Interact & Relax\nLet’s use this time to interact & relax before getting started\n\n\nPlease gather in small groups (minimum 3 classmates, maximum 6)\nIf you don’t know someone please introduce yourself\nIf your group sees someone without a group, please extend an invitation to join"
+  },
+  {
+    "objectID": "lec/examples.html#highlight-and-black-background",
+    "href": "lec/examples.html#highlight-and-black-background",
+    "title": "Lecture 1",
+    "section": "Highlight and black background",
+    "text": "Highlight and black background\n\n```{r}\n#| eval: false\n#| code-line-numbers: \"4|5|6\"\nx &lt;- 1:10\nx\nLETTERS[x]\n```"
+  },
+  {
+    "objectID": "lec/examples.html#load-packages",
+    "href": "lec/examples.html#load-packages",
+    "title": "Lecture 1",
+    "section": "Load Packages",
+    "text": "Load Packages\n\nlibrary(tidyverse)       # for data wrangling\nlibrary(tidymodels)      # for modeling"
   },
   {
     "objectID": "computations-complete.html",
