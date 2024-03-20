@@ -362,31 +362,43 @@ Lecture 1
 <section id="welcome-to-stats-101a---what-is-the-class-about" class="slide level2">
 <h2>Welcome to Stats 101A - What is the class about?</h2>
 <ul>
-<li>We begin with a quick review in the form of data exploration to refresh R.</li>
+<li>We will begin with a quick review in the form of data exploration to refresh R.</li>
 <li>The “data analysis” portion of 101A occurs in the context of <em>(linear) regression models</em></li>
 <li>A regression model is a model of the relationships between some <em>predictors</em> and an <em>outcome</em> (AKA treatments and outcomes, independent and dependent variables)</li>
 </ul>
 </section>
 <section id="why-regression" class="slide level2">
 <h2>Why regression?</h2>
+<div>
 <ul>
-<li>Regression is part of the foundation of applied statistics</li>
-<li>Regression (esp Multiple Linear) provides a simple introduction to the concept of modeling relationships between a dependent variable and one or more independent variables.</li>
-<li>MLR sets a the foundation for grasping more complex models such as Neural Networks (and these take you on the path to generative pre-trained transformers - GPTs)</li>
-<li>MLR teaches essential skills in interpreting the coefficients of predictors and assessing models.</li>
+<li class="fragment">Regression is part of the foundation of applied statistics</li>
+<li class="fragment">Regression (esp.&nbsp;Multiple Linear) provides a simple introduction to the concept of modeling relationships between a dependent variable and one or more independent variables.</li>
+<li class="fragment">MLR is a foundation for grasping more complex models such as Neural Networks (and these take you on the path to generative pre-trained transformers - GPTs)</li>
+<li class="fragment">MLR teaches essential skills in interpreting the coefficients of predictors and assessing models.<br>
+</li>
 </ul>
+</div>
 </section>
 <section id="an-open-mind-is-a-beautiful-mind" class="slide level2">
 <h2>An open mind is a beautiful mind</h2>
 <div>
 <ul>
-<li class="fragment">Machine Learning models will beat old MLR on prediction every time</li>
+<li class="fragment">Machine Learning models (e.g., Stats 101C) will beat old MLR on prediction every time</li>
 <li class="fragment">Story time: a friend selling a Machine Learning Model</li>
 <li class="fragment">Deep learning models utilize thousands to millions of parameters and non-linear transformations.</li>
 <li class="fragment">This complexity makes it difficult to understand how specific input features affect the output predictions.</li>
 <li class="fragment">The foundational knowledge from MLR can aid in understanding concepts like feature importance and model evaluation metrics</li>
 </ul>
 </div>
+</section>
+<section id="examples-of-recent-research" class="slide level2">
+<h2>Examples of recent research</h2>
+<ul>
+<li><p>Linear Regression Analysis to predict the number of deaths in India due to SARS-CoV-2 at 6 weeks from day 0 (100 cases - March 14th 2020)</p></li>
+<li><p>Adaptive Reuse for Sustainable Development and Land Use: A Multivariate Linear Regression Analysis Estimating Key Determinants of Public Perceptions (2023)</p></li>
+<li><p>Soybean Yield Estimation and Its Components: A Linear Regression Approach (2020)</p></li>
+<li><p>Explainable boosted linear regression for time series forecasting Author links open overlay panel (2021)</p></li>
+</ul>
 </section>
 <section id="thesyllabus-hunt" class="slide level2">
 <h2>TheSyllabus Hunt</h2>
@@ -471,6 +483,24 @@ Lecture 1
 </ul></li>
 </ul>
 </div>
+</section></section>
+<section>
+<section id="questions" class="title-slide slide level1 center">
+<h1>Questions?</h1>
+
+</section>
+<section id="group-activity-1-10-15-minutes" class="slide level2 smaller">
+<h2>Group Activity 1 (10-15 minutes)</h2>
+<div class="task">
+<ul>
+<li><p>If you aren’t already with a group, please join/make one, minimum 3 maximum 6.</p></li>
+<li><p>Someone take a team photo (selfie/grelfie/usie/0.5?) and either share it with your teammates for individual OR upload an annotated copy with first and last names to BruinLearn for credit for attending today.</p></li>
+<li><p>Then visit</p></li>
+</ul>
+</div>
+</section>
+<section id="section-1" class="slide level2">
+<h2></h2>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
@@ -690,44 +720,6 @@ Lecture 1
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

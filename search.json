@@ -130,172 +130,11 @@
     "text": "dim(), head(), summary()\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
-    "objectID": "lec/Lecture01.html#todays-outline",
-    "href": "lec/Lecture01.html#todays-outline",
-    "title": "Welcome Statistics 101A",
-    "section": "Today’s Outline",
-    "text": "Today’s Outline\n\n\nWelcome\nWhat is and why regression?\nExplore Data – numerical\nExplore Data – graphical"
-  },
-  {
-    "objectID": "lec/Lecture01.html#welcome-to-stats-101a---what-is-the-class-about",
-    "href": "lec/Lecture01.html#welcome-to-stats-101a---what-is-the-class-about",
-    "title": "Welcome Statistics 101A",
-    "section": "Welcome to Stats 101A - What is the class about?",
-    "text": "Welcome to Stats 101A - What is the class about?\n\nWe begin with a quick review in the form of data exploration to refresh R.\nThe “data analysis” portion of 101A occurs in the context of (linear) regression models\nA regression model is a model of the relationships between some predictors and an outcome (AKA treatments and outcomes, independent and dependent variables)"
-  },
-  {
-    "objectID": "lec/Lecture01.html#why-regression",
-    "href": "lec/Lecture01.html#why-regression",
-    "title": "Welcome Statistics 101A",
-    "section": "Why regression?",
-    "text": "Why regression?\n\nRegression is part of the foundation of applied statistics\nRegression (esp Multiple Linear) provides a simple introduction to the concept of modeling relationships between a dependent variable and one or more independent variables.\nMLR sets a the foundation for grasping more complex models such as Neural Networks (and these take you on the path to generative pre-trained transformers - GPTs)\nMLR teaches essential skills in interpreting the coefficients of predictors and assessing models."
-  },
-  {
-    "objectID": "lec/Lecture01.html#an-open-mind-is-a-beautiful-mind",
-    "href": "lec/Lecture01.html#an-open-mind-is-a-beautiful-mind",
-    "title": "Welcome Statistics 101A",
-    "section": "An open mind is a beautiful mind",
-    "text": "An open mind is a beautiful mind\n\n\nMachine Learning models will beat old MLR on prediction every time\nStory time: a friend selling a Machine Learning Model\nDeep learning models utilize thousands to millions of parameters and non-linear transformations.\nThis complexity makes it difficult to understand how specific input features affect the output predictions.\nThe foundational knowledge from MLR can aid in understanding concepts like feature importance and model evaluation metrics"
-  },
-  {
-    "objectID": "lec/Lecture01.html#thesyllabus-hunt",
-    "href": "lec/Lecture01.html#thesyllabus-hunt",
-    "title": "Welcome Statistics 101A",
-    "section": "TheSyllabus Hunt",
-    "text": "TheSyllabus Hunt\n\n\nDo we have a TA and section?\n\nYes and Yes\n\nWhat is the TAs name?\n\nJiangliang Geng\n\nDo we have a textbook? Should I buy it?\n\nYes and no (too expensive)\n\nIs there a midterm? Is there a final?\n\nNo and Yes (does anyone know when the final is scheduled)"
-  },
-  {
-    "objectID": "lec/Lecture01.html#the-syllabus-hunt-contd",
-    "href": "lec/Lecture01.html#the-syllabus-hunt-contd",
-    "title": "Welcome Statistics 101A",
-    "section": "The Syllabus Hunt (cont’d)",
-    "text": "The Syllabus Hunt (cont’d)\n\n\n\nWhen are office hours?\n\nWednesdays 3:30pm - 5:30pm (in person), Fridays 8:30am - 10am (Zoom), and by appointment (Zoom)\n\nWhat software should I use?\n\nEverything is written in R but if you want to solve an assignment in Python you may.\n\nCan I use ChatGPT?\n\nYes\n\nIf I get sick, what should I do?\n\nStay home and e-mail me before class to be excused if you do not have a doctor’s note"
-  },
-  {
-    "objectID": "lec/Lecture01.html#section",
-    "href": "lec/Lecture01.html#section",
-    "title": "Welcome Statistics 101A",
+    "objectID": "computations-complete.html",
+    "href": "computations-complete.html",
+    "title": "Think about it",
     "section": "",
-    "text": "The grade breakdown is:\n\n\n25% Five In-Class Quizzes\n\nGiven at the end of lecture in Week 2, 4, 6, 8, and 10\nWill drop your lowest score, there are no makeup quizzes\nCan be excused with acceptable documentation (e.g., doctor’s note, police report)\nIf you have CAE accommodations, you can schedule a quiz time through their office.\n\n20% Five Homework Assignments\n\nDue on Fridays in Week 2, 3, 5, 7, and 9\nWill keep all of your homework scores.\n\n20% Attending Class\n\n1% for each meeting/in class activity (19 meetings + 1 no meeting on a holiday)\nOnly excused with acceptable documentation or e-mail stating illness\n\n15% Final Exam\n\nScheduled for Wednesday June 12, 2024 3pm - 6pm\nLocation TBD around 9th week\nIf you have CAE accommodations, you should schedule your final through their office.\n\n20% Working with your TA during section.\n\nYour TA will lead you through additional material designed to augment your training.\nYour TA will determine the specific grading criteria."
-  },
-  {
-    "objectID": "RRefresher.html",
-    "href": "RRefresher.html",
-    "title": "R Refresher",
-    "section": "",
-    "text": "This is an R Refresher adapted from Weisberg (2014) We will use packages ggplot2, knitr, dplyr and tidyr"
-  },
-  {
-    "objectID": "RRefresher.html#dim",
-    "href": "RRefresher.html#dim",
-    "title": "R Refresher",
-    "section": "dim()",
-    "text": "dim()\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
-  },
-  {
-    "objectID": "RRefresher.html#head",
-    "href": "RRefresher.html#head",
-    "title": "R Refresher",
-    "section": "head()",
-    "text": "head()\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
-  },
-  {
-    "objectID": "RRefresher.html#summary",
-    "href": "RRefresher.html#summary",
-    "title": "R Refresher",
-    "section": "summary()",
-    "text": "summary()\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nSummary is being abused here. While it is fast and gives us the count of NA (missing), do consider that rounding error could occur for the summary statistics. Functions for computing stats like mean( ) can be found elsewhere:"
-  },
-  {
-    "objectID": "RRefresher.html#descriptive-basics",
-    "href": "RRefresher.html#descriptive-basics",
-    "title": "R Refresher",
-    "section": "descriptive basics",
-    "text": "descriptive basics\nChallenge (and working with webR), in teams, please compute the following for the variable birth_year in the starwars data:\n\nmean,\nsd,\nfive number summary,\ndeciles,\nthe number of missing values\nand a count (number) of unique birth years\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
-  },
-  {
-    "objectID": "RRefresher.html#conditioninggrouping",
-    "href": "RRefresher.html#conditioninggrouping",
-    "title": "R Refresher",
-    "section": "conditioning/grouping",
-    "text": "conditioning/grouping\nWe will use more of this later in the course, but for now, you should possess these fundamental data handling skills:\nin base R\nWe could use some basic character manipulation to make the result a little more compact. Here’s the issue:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nThe variable hair_color is a little too granular, let’s propose a simple fix, just keep first mention of hair color:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nNow let’s examine mass (weight) by hair_color and gender in base R:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nusing dplyr with a little tidyr\nThis is a preferred alternative to the base R solution because (1) it has more options and (2) you don’t lose as much information. First some data preparation, similar to the base R solution\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nIf we were to stop after the summarize() below we would have a “long”/“tall” result suitable for data visualization and other functions, but it’s a little difficult to make comparisons as tabled results:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nBy using .groups = “drop” and a pivot_wider() (from tidyr) we arrive at a comparable outcome, notice the missing categories:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nWe will delve into more data handling in the future."
-  },
-  {
-    "objectID": "RRefresher.html#locally",
-    "href": "RRefresher.html#locally",
-    "title": "R Refresher",
-    "section": "locally",
-    "text": "locally\nThis is the general format for reading data in base R (won’t run on this website, you’ll need to try it in R on your own computer)\nmy_data0 &lt;- read.table(\"filename\", header=TRUE,\nna.strings=\"NA\", sep = \"\")\nThere are modifications to this basic code, for example, read.csv() is just a alias of read.table() with sep = “,” as a default. We can use it in concert with file.choose() to allow you to select files from your local drive (won’t work here, just an example)\nmy_data1 &lt;- read.csv(file.choose(), header=TRUE,\nna.strings=\"NA\")"
-  },
-  {
-    "objectID": "RRefresher.html#remotely",
-    "href": "RRefresher.html#remotely",
-    "title": "R Refresher",
-    "section": "remotely",
-    "text": "remotely\nWe can also read data from a website, note the use of read.table() with sep = “,”:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nAnother good first step involves examining the structure of the object:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nThis will help identify numeric and non-numeric data.\nWe could load an additional package, readr, to allow us to read additional data formats such as Excel files (this is something you can do in section or in an assignment)"
-  },
-  {
-    "objectID": "RRefresher.html#examples",
-    "href": "RRefresher.html#examples",
-    "title": "R Refresher",
-    "section": "Examples",
-    "text": "Examples\nnormal\nThe normal distribution’s root is “norm”. The function pnorm() takes a quantile and returns a probability of observing a value less than or equal to 1.96 in a standard normal distribution:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nWe can change the pnorm defaults to accommodate a different situation, here, SAT scores combined math/verbal:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nqnorm() answers the question - given a probability what is the value of the associated quantile?\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\ndnorm() - returns the height of the probability density function at points specified by the programmer. In the normal distribution, points farther from the mean have lower density\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nt\nThere are other distributions with different root names, but the same four letter identifier holds\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nchi-square\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nan additional density example and our bridge to visualization\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nTest yourself/your team\nPlease try generating values from another distribution (e.g., F, Poisson), you can find a longer list of distributions here: https://stat.ethz.ch/R-manual/R-devel/library/stats/html/Distributions.html\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
-  },
-  {
-    "objectID": "RRefresher.html#saving-graphics",
-    "href": "RRefresher.html#saving-graphics",
-    "title": "R Refresher",
-    "section": "saving graphics",
-    "text": "saving graphics\nWe can output graphics by using the GUI or directly in our code (will only run locally):\npdf(\"myhist.pdf\", height=5, width=5)\nhist(rnorm(100))\ndev.off()"
-  },
-  {
-    "objectID": "RRefresher.html#plot-in-base-r",
-    "href": "RRefresher.html#plot-in-base-r",
-    "title": "R Refresher",
-    "section": "plot() in base R",
-    "text": "plot() in base R\nBase R’s plot() function is a reasonable starting point and convenient:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
-  },
-  {
-    "objectID": "RRefresher.html#ggplot",
-    "href": "RRefresher.html#ggplot",
-    "title": "R Refresher",
-    "section": "ggplot( )",
-    "text": "ggplot( )\nWe have more data visualization power with ggplot. We could add straight lines (AKA fit linear models) for each species and for overall\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
-  },
-  {
-    "objectID": "RRefresher.html#plot-within-a-for-loop",
-    "href": "RRefresher.html#plot-within-a-for-loop",
-    "title": "R Refresher",
-    "section": "plot() within a for loop",
-    "text": "plot() within a for loop\nAnother example, first using base R to plot 4 graphs in a single window:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
-  },
-  {
-    "objectID": "RRefresher.html#tidyverse-style",
-    "href": "RRefresher.html#tidyverse-style",
-    "title": "R Refresher",
-    "section": "Tidyverse style",
-    "text": "Tidyverse style\nWe can do the same with ggplot, but it requires more data handling\nFirst, pivot the data from wide to long/tall:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nAlways check your results:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nggplot will be much happier with “long” (AKA “tall” maybe also “stacked”)\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nWe can calculate the correlations for each set, the group_by() function combined with summarize in dplyr is very useful for that.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
-  },
-  {
-    "objectID": "RRefresher.html#five-minute-ggplot-refresher",
-    "href": "RRefresher.html#five-minute-ggplot-refresher",
-    "title": "R Refresher",
-    "section": "Five minute ggplot refresher",
-    "text": "Five minute ggplot refresher\nIf there is only one package you need in R, it’s ggplot. It’s simple and logical and flows with data beautifully. We can use penguins from the palmerpenguins library.\nggplot needs to know what data you plan to use and it needs to have an aesthetic (aes) specified.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nNo error, but no graphic. All we have done is specified the data and given ggplot a sense of how the graphic should appear (x, y, color) as it relates to the features.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nThe “+” separates “layers”. Think of ggplot as like making a cake, you lay down the foundation and then you start decorating. Next up, the geom_ which tell ggplot how the features should be plotted.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nThat is just about it. I do recommend you learn how to “facet” (condition) the plots:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nread “as a function of island”, if you wanted island on the rows, move to facet_grid()\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\na better use of facet_grid\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nThe remaining functions deal with appearance such as labels, legends and maybe adding additional geoms:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
-  },
-  {
-    "objectID": "hw/Assignment1.html",
-    "href": "hw/Assignment1.html",
-    "title": "Homework 1",
-    "section": "",
-    "text": "You may discuss homework problems with other students, but you must write the assignment yourself.\nPlease combine all your answers, the computer code and the figures into one PDF file, and submit a copy to BruinLearn.\nGrading: 5 points total is 20.\nDue date: 11:59 PM April 13th 2024\nProblem 1\nOn Groundhog Day, February 2, a famous groundhog in Punxsutawney, PA is used to predict whether a winter will be long or not based on whether or not he sees his shadow. I collected data on whether he saw his shadow or not from here. I stored some of this data in this table.\nAlthough Phil is on the East Coast, I wondered if the information says anything about whether or not we will experience a rainy winter out here in California. For this, I found rainfall data, and saved it in a table. To see how this was extracted see this notebook.\n\nMake a boxplot of the mean monthly rainfall (total annual rainfall divided by 12 months) rainfall in Northern California comparing the years Phil sees his shadow versus the years he does not. In Piazza, some people used February instead of mean monthly rainfall. This is OK as well.\nConstruct a 93% confidence interval for the difference between the mean monthly rainfall (total annual rainfall divided by 12 months) in years Phil sees his shadow and years he does not. What assumptions / model are you using?\nInterpret the procedure used to construct in part 2. What do we really know about confidence intervals?\nAt level, \\(\\alpha = 0.05\\) would you reject the null hypothesis that the average rainfall in Northern California during the month of February was the same in years Phil sees his shadow versus years he does not?\nWhat assumptions are you making in forming your confidence interval and in your hypothesis test?\nQuestion 2\nIn Question 1, part 4 above, you are asked to carry out a hypothesis test. In part 5, you are asked to justify your confidence interval and hypothesis test. Both are typically based on a \\(T\\) statistic of some form.\n\nWrite functions in R to generate new data sets for the two different groups of years, calling them shadow and noshadow. The functions should be such that you can specify the average rainfall within the two years separately, as well as the variability of the rainfall within those years (for example, you might use rnorm with different mean and variance parameters).\nUsing your two functions above, simulate data under the null hypothesis that the data from shadow years is the same as the data from noshadow years, computing the \\(T\\) statistic each time. Plot a density of a sample of 5000 such \\(T\\) statistics, overlaying it with a “true” density that holds under the null hypothesis. Explain how these densities relate to the test you carried out in Question 1, part 4.\nAgain using the same two functions, simulate data under the null hypothesis that the average rainfall from shadow years is the same as the average rainfall from noshadow years, allowing for the possibility that the variability of the average is different among the two groups. The function t.test allows specifying var.equal to be true or false. Compare the density of the \\(T\\) statistics when the variability is not the same within the two groups. There are 4 possibilities (2 choices of variances for shadow and noshadow, and setting var.equal to be TRUE or FALSE). So we should see 4 histograms possibly comparing to the “true” density of part 2.\nQuestion 3\nThe data set walleye in the package alr4 (remember you may have to run install.packages(\"alr4\")) of data measured on walleye fish in Wisconsin.\n\nCreate a boxplot of length, for age in 5:8.\nCompute the sample mean, sample standard deviation length in the four groups.\nCreate a histogram of length within age of 5:8 putting the plots in a 2x2 grid in one file.\nCompute a 95% confidence interval for the difference in length in years 5 and 7. What assumptions are you making?\nAt level \\(\\alpha=10\\%\\), test the null hypothesis that the average length in the group age==5 is the same as the in the group age==7. What assumptions are you making? What can you conclude?\nRepeat the test in 5. using the function lm.\nQuestion 4 (RABE)\n\nUse the anscombe data in R. Attach the table using the command attach.\nPlot the 4 data sets (x1,y1), (x2,y2), (x3,y3), (x4,y4) on a 2-by-2 grid of plots using the commands plot and par(mfrow=c(2,2)). Add the number of the dataset to each plot as the main title on each plot.\n\nFit a regression model to the data sets:\n\ny1 ~ x1\ny2 ~ x2\ny3 ~ x3\ny4 ~ x4\n\nusing the command lm. Verify that all the fitted models have the exact same coefficients (up to numerical tolerance).\n\nUsing the command cor, compute the sample correlation for each data set.\nFit the same models in 3. but with the x and y reversed. Using the command summary, does anything about the results stay the same when you reverse x and y?\nCompute the \\(SSE, SST\\) and \\(R^2\\) value for each data set. Use the commands mean, sum, predict and / or resid. (Use the original models, i.e. y1 ~ x1 so only 4 \\(SSE\\) values)\nUsing the command abline, replot the data, adding the regression line to each plot. (Use the original models, i.e. y1 ~ x1 so only 4 plots)"
-  },
-  {
-    "objectID": "hw/hw-1.html",
-    "href": "hw/hw-1.html",
-    "title": "hw-1",
-    "section": "",
-    "text": "Please upload your materials to be graded to BruinLearn"
+    "text": "Please enable JavaScript to experience the dynamic code cell content on this page.\nThe data:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nThe plots\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nWhat it we wanted to model it?\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
     "objectID": "lec/examples.html#interact-relax",
@@ -319,11 +158,151 @@
     "text": "Load Packages\n\nlibrary(tidyverse)       # for data wrangling\nlibrary(tidymodels)      # for modeling"
   },
   {
-    "objectID": "computations-complete.html",
-    "href": "computations-complete.html",
-    "title": "Think about it",
+    "objectID": "hw/Assignment1.html",
+    "href": "hw/Assignment1.html",
+    "title": "Homework 1",
     "section": "",
-    "text": "Please enable JavaScript to experience the dynamic code cell content on this page.\nThe data:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nThe plots\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nWhat it we wanted to model it?\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+    "text": "You may discuss homework problems with other students, but you must write the assignment yourself.\nPlease combine all your answers, the computer code and the figures into one PDF file, and submit a copy to BruinLearn.\nGrading: 5 points total is 20.\nDue date: 11:59 PM April 13th 2024\nProblem 1\nOn Groundhog Day, February 2, a famous groundhog in Punxsutawney, PA is used to predict whether a winter will be long or not based on whether or not he sees his shadow. I collected data on whether he saw his shadow or not from here. I stored some of this data in this table.\nAlthough Phil is on the East Coast, I wondered if the information says anything about whether or not we will experience a rainy winter out here in California. For this, I found rainfall data, and saved it in a table. To see how this was extracted see this notebook.\n\nMake a boxplot of the mean monthly rainfall (total annual rainfall divided by 12 months) rainfall in Northern California comparing the years Phil sees his shadow versus the years he does not. In Piazza, some people used February instead of mean monthly rainfall. This is OK as well.\nConstruct a 93% confidence interval for the difference between the mean monthly rainfall (total annual rainfall divided by 12 months) in years Phil sees his shadow and years he does not. What assumptions / model are you using?\nInterpret the procedure used to construct in part 2. What do we really know about confidence intervals?\nAt level, \\(\\alpha = 0.05\\) would you reject the null hypothesis that the average rainfall in Northern California during the month of February was the same in years Phil sees his shadow versus years he does not?\nWhat assumptions are you making in forming your confidence interval and in your hypothesis test?\nQuestion 2\nIn Question 1, part 4 above, you are asked to carry out a hypothesis test. In part 5, you are asked to justify your confidence interval and hypothesis test. Both are typically based on a \\(T\\) statistic of some form.\n\nWrite functions in R to generate new data sets for the two different groups of years, calling them shadow and noshadow. The functions should be such that you can specify the average rainfall within the two years separately, as well as the variability of the rainfall within those years (for example, you might use rnorm with different mean and variance parameters).\nUsing your two functions above, simulate data under the null hypothesis that the data from shadow years is the same as the data from noshadow years, computing the \\(T\\) statistic each time. Plot a density of a sample of 5000 such \\(T\\) statistics, overlaying it with a “true” density that holds under the null hypothesis. Explain how these densities relate to the test you carried out in Question 1, part 4.\nAgain using the same two functions, simulate data under the null hypothesis that the average rainfall from shadow years is the same as the average rainfall from noshadow years, allowing for the possibility that the variability of the average is different among the two groups. The function t.test allows specifying var.equal to be true or false. Compare the density of the \\(T\\) statistics when the variability is not the same within the two groups. There are 4 possibilities (2 choices of variances for shadow and noshadow, and setting var.equal to be TRUE or FALSE). So we should see 4 histograms possibly comparing to the “true” density of part 2.\nQuestion 3\nThe data set walleye in the package alr4 (remember you may have to run install.packages(\"alr4\")) of data measured on walleye fish in Wisconsin.\n\nCreate a boxplot of length, for age in 5:8.\nCompute the sample mean, sample standard deviation length in the four groups.\nCreate a histogram of length within age of 5:8 putting the plots in a 2x2 grid in one file.\nCompute a 95% confidence interval for the difference in length in years 5 and 7. What assumptions are you making?\nAt level \\(\\alpha=10\\%\\), test the null hypothesis that the average length in the group age==5 is the same as the in the group age==7. What assumptions are you making? What can you conclude?\nRepeat the test in 5. using the function lm.\nQuestion 4 (RABE)\n\nUse the anscombe data in R. Attach the table using the command attach.\nPlot the 4 data sets (x1,y1), (x2,y2), (x3,y3), (x4,y4) on a 2-by-2 grid of plots using the commands plot and par(mfrow=c(2,2)). Add the number of the dataset to each plot as the main title on each plot.\n\nFit a regression model to the data sets:\n\ny1 ~ x1\ny2 ~ x2\ny3 ~ x3\ny4 ~ x4\n\nusing the command lm. Verify that all the fitted models have the exact same coefficients (up to numerical tolerance).\n\nUsing the command cor, compute the sample correlation for each data set.\nFit the same models in 3. but with the x and y reversed. Using the command summary, does anything about the results stay the same when you reverse x and y?\nCompute the \\(SSE, SST\\) and \\(R^2\\) value for each data set. Use the commands mean, sum, predict and / or resid. (Use the original models, i.e. y1 ~ x1 so only 4 \\(SSE\\) values)\nUsing the command abline, replot the data, adding the regression line to each plot. (Use the original models, i.e. y1 ~ x1 so only 4 plots)"
+  },
+  {
+    "objectID": "hw/hw-1.html",
+    "href": "hw/hw-1.html",
+    "title": "hw-1",
+    "section": "",
+    "text": "Please upload your materials to be graded to BruinLearn"
+  },
+  {
+    "objectID": "lec/Lecture01.html#todays-outline",
+    "href": "lec/Lecture01.html#todays-outline",
+    "title": "Welcome Statistics 101A",
+    "section": "Today’s Outline",
+    "text": "Today’s Outline\n\n\nWelcome\nWhat is and why regression?\nExplore Data – numerical\nExplore Data – graphical"
+  },
+  {
+    "objectID": "lec/Lecture01.html#welcome-to-stats-101a---what-is-the-class-about",
+    "href": "lec/Lecture01.html#welcome-to-stats-101a---what-is-the-class-about",
+    "title": "Welcome Statistics 101A",
+    "section": "Welcome to Stats 101A - What is the class about?",
+    "text": "Welcome to Stats 101A - What is the class about?\n\nWe will begin with a quick review in the form of data exploration to refresh R.\nThe “data analysis” portion of 101A occurs in the context of (linear) regression models\nA regression model is a model of the relationships between some predictors and an outcome (AKA treatments and outcomes, independent and dependent variables)"
+  },
+  {
+    "objectID": "lec/Lecture01.html#why-regression",
+    "href": "lec/Lecture01.html#why-regression",
+    "title": "Welcome Statistics 101A",
+    "section": "Why regression?",
+    "text": "Why regression?\n\n\nRegression is part of the foundation of applied statistics\nRegression (esp. Multiple Linear) provides a simple introduction to the concept of modeling relationships between a dependent variable and one or more independent variables.\nMLR is a foundation for grasping more complex models such as Neural Networks (and these take you on the path to generative pre-trained transformers - GPTs)\nMLR teaches essential skills in interpreting the coefficients of predictors and assessing models."
+  },
+  {
+    "objectID": "lec/Lecture01.html#an-open-mind-is-a-beautiful-mind",
+    "href": "lec/Lecture01.html#an-open-mind-is-a-beautiful-mind",
+    "title": "Welcome Statistics 101A",
+    "section": "An open mind is a beautiful mind",
+    "text": "An open mind is a beautiful mind\n\n\nMachine Learning models (e.g., Stats 101C) will beat old MLR on prediction every time\nStory time: a friend selling a Machine Learning Model\nDeep learning models utilize thousands to millions of parameters and non-linear transformations.\nThis complexity makes it difficult to understand how specific input features affect the output predictions.\nThe foundational knowledge from MLR can aid in understanding concepts like feature importance and model evaluation metrics"
+  },
+  {
+    "objectID": "lec/Lecture01.html#examples-of-recent-research",
+    "href": "lec/Lecture01.html#examples-of-recent-research",
+    "title": "Welcome Statistics 101A",
+    "section": "Examples of recent research",
+    "text": "Examples of recent research\n\nLinear Regression Analysis to predict the number of deaths in India due to SARS-CoV-2 at 6 weeks from day 0 (100 cases - March 14th 2020)\nAdaptive Reuse for Sustainable Development and Land Use: A Multivariate Linear Regression Analysis Estimating Key Determinants of Public Perceptions (2023)\nSoybean Yield Estimation and Its Components: A Linear Regression Approach (2020)\nExplainable boosted linear regression for time series forecasting Author links open overlay panel (2021)"
+  },
+  {
+    "objectID": "lec/Lecture01.html#thesyllabus-hunt",
+    "href": "lec/Lecture01.html#thesyllabus-hunt",
+    "title": "Welcome Statistics 101A",
+    "section": "TheSyllabus Hunt",
+    "text": "TheSyllabus Hunt\n\n\nDo we have a TA and section?\n\nYes and Yes\n\nWhat is the TAs name?\n\nJiangliang Geng\n\nDo we have a textbook? Should I buy it?\n\nYes and no (too expensive)\n\nIs there a midterm? Is there a final?\n\nNo and Yes (does anyone know when the final is scheduled)"
+  },
+  {
+    "objectID": "lec/Lecture01.html#the-syllabus-hunt-contd",
+    "href": "lec/Lecture01.html#the-syllabus-hunt-contd",
+    "title": "Welcome Statistics 101A",
+    "section": "The Syllabus Hunt (cont’d)",
+    "text": "The Syllabus Hunt (cont’d)\n\n\n\nWhen are office hours?\n\nWednesdays 3:30pm - 5:30pm (in person), Fridays 8:30am - 10am (Zoom), and by appointment (Zoom)\n\nWhat software should I use?\n\nEverything is written in R but if you want to solve an assignment in Python you may.\n\nCan I use ChatGPT?\n\nYes\n\nIf I get sick, what should I do?\n\nStay home and e-mail me before class to be excused if you do not have a doctor’s note"
+  },
+  {
+    "objectID": "lec/Lecture01.html#section",
+    "href": "lec/Lecture01.html#section",
+    "title": "Welcome Statistics 101A",
+    "section": "",
+    "text": "The grade breakdown is:\n\n\n25% Five In-Class Quizzes\n\nGiven at the end of lecture in Week 2, 4, 6, 8, and 10\nWill drop your lowest score, there are no makeup quizzes\nCan be excused with acceptable documentation (e.g., doctor’s note, police report)\nIf you have CAE accommodations, you can schedule a quiz time through their office.\n\n20% Five Homework Assignments\n\nDue on Fridays in Week 2, 3, 5, 7, and 9\nWill keep all of your homework scores.\n\n20% Attending Class\n\n1% for each meeting/in class activity (19 meetings + 1 no meeting on a holiday)\nOnly excused with acceptable documentation or e-mail stating illness\n\n15% Final Exam\n\nScheduled for Wednesday June 12, 2024 3pm - 6pm\nLocation TBD around 9th week\nIf you have CAE accommodations, you should schedule your final through their office.\n\n20% Working with your TA during section.\n\nYour TA will lead you through additional material designed to augment your training.\nYour TA will determine the specific grading criteria."
+  },
+  {
+    "objectID": "lec/Lecture01.html#group-activity-1-10-15-minutes",
+    "href": "lec/Lecture01.html#group-activity-1-10-15-minutes",
+    "title": "Welcome Statistics 101A",
+    "section": "Group Activity 1 (10-15 minutes)",
+    "text": "Group Activity 1 (10-15 minutes)\n\n\nIf you aren’t already with a group, please join/make one, minimum 3 maximum 6.\nSomeone take a team photo (selfie/grelfie/usie/0.5?) and either share it with your teammates for individual OR upload an annotated copy with first and last names to BruinLearn for credit for attending today.\nThen visit"
+  },
+  {
+    "objectID": "activity/RRefresher.html",
+    "href": "activity/RRefresher.html",
+    "title": "R Refresher",
+    "section": "",
+    "text": "This is an R Refresher adapted from Weisberg (2014) We will use packages ggplot2, knitr, dplyr and tidyr"
+  },
+  {
+    "objectID": "activity/RRefresher.html#slices-slicing",
+    "href": "activity/RRefresher.html#slices-slicing",
+    "title": "R Refresher",
+    "section": "slices, slicing",
+    "text": "slices, slicing\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "activity/RRefresher.html#slice_head",
+    "href": "activity/RRefresher.html#slice_head",
+    "title": "R Refresher",
+    "section": "slice_head()",
+    "text": "slice_head()\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "activity/RRefresher.html#summariseacross",
+    "href": "activity/RRefresher.html#summariseacross",
+    "title": "R Refresher",
+    "section": "summarise(across)",
+    "text": "summarise(across)\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "activity/RRefresher.html#descriptive-basics",
+    "href": "activity/RRefresher.html#descriptive-basics",
+    "title": "R Refresher",
+    "section": "descriptive basics",
+    "text": "descriptive basics\nChallenge (and practice working with webR), in teams, please compute the following for the variable birth_year in the starwars data:\n\nthe first and third quartiles\na decile (e.g., 90th percentile)\nthe number of missing values\nand a count (number) of unique birth years\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "activity/RRefresher.html#conditioninggrouping",
+    "href": "activity/RRefresher.html#conditioninggrouping",
+    "title": "R Refresher",
+    "section": "conditioning/grouping",
+    "text": "conditioning/grouping\nWe will use more of this later in the course, but for now, you should possess these fundamental data handling skills:\nusing dplyr with a little tidyr\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nIf we were to stop after the summarize() below we would have a “long”/“tall” result suitable for data visualization and other functions, but it’s a little difficult to make comparisons as tabled results:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nBy using .groups = “drop” and a pivot_wider() (from tidyr) we arrive at a comparable outcome, notice the missing categories:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nWe will delve into more data handling in the future."
+  },
+  {
+    "objectID": "activity/RRefresher.html#locally",
+    "href": "activity/RRefresher.html#locally",
+    "title": "R Refresher",
+    "section": "locally",
+    "text": "locally\nThis is the general format for reading data in base R (won’t run on this website, you’ll need to try it in R on your own computer)\nmy_data0 &lt;- read.table(\"filename\", header=TRUE,\nna.strings=\"NA\", sep = \"\")\nThere are modifications to this basic code, for example, read.csv() is just a alias of read.table() with sep = “,” as a default. We can use it in concert with file.choose() to allow you to select files from your local drive (won’t work here, just an example)\nmy_data1 &lt;- read.csv(file.choose(), header=TRUE,\nna.strings=\"NA\")"
+  },
+  {
+    "objectID": "activity/RRefresher.html#remotely",
+    "href": "activity/RRefresher.html#remotely",
+    "title": "R Refresher",
+    "section": "remotely",
+    "text": "remotely\nWe can also read data from a website, note the use of read.table() with sep = “,”:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nAnother good first step involves examining the structure of the object:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nThis will help identify numeric and non-numeric data.\nWe could load an additional package, readr, to allow us to read additional data formats such as Excel files (this is something you can do in section or in an assignment)"
+  },
+  {
+    "objectID": "activity/RRefresher.html#examples",
+    "href": "activity/RRefresher.html#examples",
+    "title": "R Refresher",
+    "section": "Examples",
+    "text": "Examples\nnormal\nThe normal distribution’s root is “norm”. The function pnorm() takes a quantile and returns a probability of observing a value less than or equal to 1.96 in a standard normal distribution:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nWe can change the pnorm defaults to accommodate a different situation, here, SAT scores combined math/verbal:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nqnorm() answers the question - given a probability what is the value of the associated quantile?\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\ndnorm() - returns the height of the probability density function at points specified by the programmer. In the normal distribution, points farther from the mean have lower density\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nt\nThere are other distributions with different root names, but the same four letter identifier holds\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nchi-square\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nan additional density example and our bridge to visualization\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nTest yourself/your team\nPlease try generating values from another distribution (e.g., F, Poisson), you can find a longer list of distributions here: https://stat.ethz.ch/R-manual/R-devel/library/stats/html/Distributions.html\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "activity/RRefresher.html#five-minute-ggplot-refresher",
+    "href": "activity/RRefresher.html#five-minute-ggplot-refresher",
+    "title": "R Refresher",
+    "section": "Five minute ggplot refresher",
+    "text": "Five minute ggplot refresher\nIf there is only one package you need in R, it’s ggplot. It’s simple and logical and flows with data beautifully. We can use penguins from the palmerpenguins library.\nggplot needs to know what data you plan to use and it needs to have an aesthetic (aes) specified.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nNo error, but no graphic. All we have done is specified the data and given ggplot a sense of how the graphic should appear (x, y, color) as it relates to the features.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nThe “+” separates “layers”. Think of ggplot as like making a cake, you lay down the foundation and then you start decorating. Next up, the geom_ which tell ggplot how the features should be plotted.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nThat is just about it. I do recommend you learn how to “facet” (condition) the plots:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nread “as a function of island”, if you wanted island on the rows, move to facet_grid()\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\na better use of facet_grid\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nThe remaining functions deal with appearance such as labels, legends and maybe adding additional geoms:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   },
   {
     "objectID": "EDA.html",
