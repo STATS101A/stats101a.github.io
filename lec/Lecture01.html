@@ -361,11 +361,13 @@ Lecture 1
 </section>
 <section id="welcome-to-stats-101a---what-is-the-class-about" class="slide level2">
 <h2>Welcome to Stats 101A - What is the class about?</h2>
+<div>
 <ul>
-<li>We will begin with a quick review in the form of data exploration to refresh R.</li>
-<li>The “data analysis” portion of 101A occurs in the context of <em>(linear) regression models</em></li>
-<li>A regression model is a model of the relationships between some <em>predictors</em> and an <em>outcome</em> (AKA treatments and outcomes, independent and dependent variables)</li>
+<li class="fragment">We will begin with a brief review in the form of data exploration to refresh R.</li>
+<li class="fragment">The “data analysis” portion of 101A occurs in the context of <em>(linear) regression models</em></li>
+<li class="fragment">A regression model is a model of the relationships between some <em>predictors</em> and an <em>outcome</em> (AKA treatments and outcomes, independent and dependent variables)</li>
 </ul>
+</div>
 </section>
 <section id="why-regression" class="slide level2">
 <h2>Why regression?</h2>
@@ -379,20 +381,61 @@ Lecture 1
 </ul>
 </div>
 </section>
-<section id="an-open-mind-is-a-beautiful-mind" class="slide level2">
-<h2>An open mind is a beautiful mind</h2>
+<section id="an-aside---mlr" class="slide level2">
+<h2>An aside - MLR</h2>
+<p>Jumping weeks ahead…</p>
+<div class="fragment">
+<p>The equation for a multiple linear regression model with n predictors can be expressed as:</p>
+</div>
+<div class="fragment">
+<p><span class="math display">\[
+y = \beta_0 + \beta_1 x_1 +  \beta_2 x_2 + \ldots +  \beta_n x_n + \epsilon
+\]</span> where:</p>
+<p>y is the dependent variable,&nbsp;<br>
+<span class="math inline">\(x_1, x_2, \ldots , x_n\)</span> are the independent variables (predictors)<br>
+<span class="math inline">\(\beta_0, \beta_1, \beta_2, \ldots , \beta_n\)</span>are the coefficients of the model,<br>
+<span class="math inline">\(\epsilon\)</span> is the error term.</p>
+</div>
+</section>
+<section id="neural-network-in-101c" class="slide level2">
+<h2>Neural Network (in 101C)</h2>
 <div>
 <ul>
-<li class="fragment">Machine Learning Models (e.g., see Stats 101C) will beat old MLR on prediction every time</li>
-<li class="fragment">Story time: a friend is trying to sell a Machine Learning Model</li>
-<li class="fragment">Deep learning models utilize thousands to millions of parameters and non-linear transformations.</li>
-<li class="fragment">This complexity makes it challenging to understand how specific input features affect the output predictions.</li>
-<li class="fragment">The foundational knowledge from MLR can assist in interpreting metrics like feature importance, evaluating model coefficients and assessing entire models.</li>
+<li class="fragment">A neural network is a more complex computational model inspired by the human brain.<br>
+</li>
+<li class="fragment">NN consist of mulitple layers consisting of nodes (or neurons), where each node in one layer is connected to nodes in the next layer, with each connection having a weight associated with it.<br>
+</li>
+<li class="fragment">The relationship between the input layer and the output layer in a neural network with no additional layers &amp; no activation function models the same linear combination of weights and inputs as in multiple linear regression</li>
 </ul>
 </div>
 </section>
-<section id="examples-of-recent-research" class="slide level2">
-<h2>Examples of recent research</h2>
+<section id="neural-network-in-101c-1" class="slide level2">
+<h2>Neural Network (in 101C)</h2>
+<p>Compare (simplest form):</p>
+<div class="fragment">
+<p><span class="math display">\[ y = \omega_0 + \omega_1 x_1 +  \omega_2 x_2 + \ldots +  \omega_n x_n \]</span></p>
+<p>where: y is the output,<br>
+<span class="math inline">\(x_1, x_2, \ldots , x_n\)</span> are the inputs<br>
+<span class="math inline">\(\omega_0, \omega_1, \omega_2, \ldots , \omega_n\)</span> are the weights of the connections.<br>
+There is no error term, here the error is part of the optimization method not an explicit term in the model itself.</p>
+</div>
+</section>
+<section id="an-open-mind-is-a-beautiful-mind" class="slide level2">
+<h2>An open mind is a beautiful mind</h2>
+<div>
+<div style="font-size: 90%;">
+<ul>
+<li class="fragment">Machine Learning Models (e.g., see Stats 101C) will beat old (1800s) MLR on prediction almost every time</li>
+<li class="fragment">Story time: a friend is trying to sell a Machine Learning Model to a billion dollar business</li>
+<li class="fragment">Deep learning models use thousands to millions of parameters and non-linear transformations.</li>
+<li class="fragment">This complexity makes it challenging to understand how specific inputs affect the output.</li>
+<li class="fragment">The foundational knowledge from MLR can assist in interpreting metrics like feature importance, evaluating model coefficients and assessing entire models.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="examples-of-current-application" class="slide level2">
+<h2>Examples of current application</h2>
 <ul>
 <li><p>Linear Regression Analysis to predict the number of deaths in India due to SARS-CoV-2 at 6 weeks from day 0 (100 cases - March 14th 2020)</p></li>
 <li><p>Adaptive Reuse for Sustainable Development and Land Use: A Multivariate Linear Regression Analysis Estimating Key Determinants of Public Perceptions (2023)</p></li>
@@ -496,7 +539,7 @@ Lecture 1
 <li><p>If you aren’t already with a group, please join/make one, minimum 3 maximum 6.</p></li>
 <li><p>Someone take a team photo (selfie/grelfie/usie/0.5?) and either share it with your teammates (or everyone take their own, but that’s not very team oriented) for part of attendance credit.</p></li>
 <li><p>The other part of today’s attendance credit - please try the next activity in teams (what does this mean?) and be prepared to ask questions of us or others if there is something you don’t understand. Upload a screen grab of your code and answer from R to the “descriptive basics challenge”.</p></li>
-<li><p>Please visit <a href="https://stats101a.github.io/activity/RRefresher.html">https://stats101a.github.io/activity/RRefresher.html</a><br>
+<li><p>Please visit <a href="https://stats101a.github.io/activity/RRefresher.html" class="uri">https://stats101a.github.io/activity/RRefresher.html</a><br>
 </p></li>
 </ul>
 </div>
