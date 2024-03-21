@@ -228,7 +228,7 @@
     "href": "lec/Lecture01.html#group-activity-2-if-we-have-time",
     "title": "Welcome Statistics 101A",
     "section": "Group Activity 2 (if we have time)",
-    "text": "Group Activity 2 (if we have time)\n\n\n\nIf you work with data and visualization of data, you should know how to use ggplot\nYes, matplotlib and seaborn are nice, but we’re using R in Stats 101A and ggplot is important\nThe end of the activity is “5 minute ggplot” - it’s enough to introduce you to the structure and philosophy. The rest you can ask ChatGPT or similar"
+    "text": "Group Activity 2 (if we have time)\n\n\n\nIf you work with data and visualization of data, you should know how to use ggplot\nYes, matplotlib and seaborn are nice, but we’re using R in Stats 101A and ggplot is important\nThe end of the previous R activity is “5 minute ggplot” - it’s enough to introduce you to the structure and philosophy. The rest you can ask ChatGPT or similar"
   },
   {
     "objectID": "StoryTelling.html",
